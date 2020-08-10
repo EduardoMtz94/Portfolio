@@ -1,0 +1,90 @@
+header {
+    width: 100%;
+    .content {
+        height: 700px;
+        .menu {
+            width: 95%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            a {
+                text-decoration: none;
+                display: inline-block;
+                color: #000;
+                margin: 20px 0;
+                padding: 25px 20px;
+                font-weight: 300;
+                font-size: 1rem;
+                &::before {
+                    content: "";
+                    display: block;
+                    height: 1.5px;
+                    width: 0%;
+                    background-color: #000;
+                    position: relative;
+                    transition: all ease-in 250ms;
+                    top: 25px;
+                }
+                &:hover::before {
+                    width: 90%;
+                }
+            }
+        }
+        .title {
+            width: 95%;
+            margin-top: 150px;
+            text-align: right;
+            h1 {
+                font-size: 40px;
+                font-weight: 700;
+            }
+        }
+        .sidebar {
+            position: fixed;
+            top: 40%;
+            z-index: 1;
+            ul {
+                list-style-type: none;
+                padding: 0;
+                transform: translateX(-155px);
+                li {
+                    display: block;
+                    background-color: rgba(#fff, 0.2);
+                    text-align: right;
+                    padding: 10px;
+                    transition: all 1s;
+                    font-weight: 300;
+                    width: 200px;
+                    a {
+                        text-decoration: none;
+                        color: #000;
+                        span {
+                            opacity: 0;
+                        }
+                        &:hover span{
+                            opacity: 1;
+                            transition: all 1.5s;
+                        }
+                        i {
+                            text-align: center;
+                            margin-left: 10px;
+                            color: rgba(#000, 0.3);
+                            background-color: #fff;
+                            border-radius: 50%;
+                            width: 20px;
+                            height: 20px;
+                            font-size: 20px;
+                            transform: rotate(0deg);
+                        }
+                        &:hover i {
+                            color: #000;
+                            transform: rotate(360deg);
+                            transition: all 1.5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

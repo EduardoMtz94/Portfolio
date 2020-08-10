@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.content {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+}
+
+header .content {
+  height: 700px;
+}
+
+header .content .menu {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+header .content .menu a {
+  text-decoration: none;
+  display: inline-block;
+  color: #000;
+  margin: 20px 0;
+  padding: 25px 20px;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+header .content .menu a::before {
+  content: "";
+  display: block;
+  height: 1.5px;
+  width: 0%;
+  background-color: #000;
+  position: relative;
+  transition: all ease-in 250ms;
+  top: 25px;
+}
+
+header .content .menu a:hover::before {
+  width: 90%;
+}
+
+header .content .title {
+  width: 95%;
+  margin-top: 150px;
+  text-align: right;
+}
+
+header .content .title h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+header .content .sidebar {
+  position: fixed;
+  top: 40%;
+  z-index: 1;
+}
+
+header .content .sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  transform: translateX(-155px);
+}
+
+header .content .sidebar ul li {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: right;
+  padding: 10px;
+  transition: all 1s;
+  font-weight: 300;
+  width: 200px;
+}
+
+header .content .sidebar ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+header .content .sidebar ul li a span {
+  opacity: 0;
+}
+
+header .content .sidebar ul li a:hover span {
+  opacity: 1;
+  transition: all 1.5s;
+}
+
+header .content .sidebar ul li a i {
+  text-align: center;
+  margin-left: 10px;
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  transform: rotate(0deg);
+}
+
+header .content .sidebar ul li a:hover i {
+  color: #000;
+  transform: rotate(360deg);
+  transition: all 1.5s;
+}
+
