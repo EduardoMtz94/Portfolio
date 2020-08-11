@@ -1,0 +1,128 @@
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .about {
+        width: 100%;
+        margin-bottom: 50px;
+        .content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .foto {
+                width: 48%;
+                padding: 15px;
+                transition: all 250ms;
+                img {
+                    border-radius: 10px;
+                    width: 100%;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                &:hover {
+                    padding: 10px;
+                }
+                &:hover img{
+                    box-shadow: 0 0 10px;
+                }
+            }
+            article {
+                width: 48%;
+                align-self: stretch;
+                text-align: justify;
+                font-size: 24px;
+                font-weight: 300;
+                padding: 10px;
+                position: relative;
+                h2 {
+                    width: 100%;
+                    text-align: right;
+                    font-size: 32px;
+                    font-weight: 400;
+                    margin-bottom: 50px;
+                }
+                p {
+                    position: absolute;
+                    padding: 10px;
+                    top: 30%;
+                    left: 0%;
+                }
+            }
+        }
+    }
+    .skills {
+        width: 100%;
+        margin-bottom: 50px;
+        .content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            h2 {
+                width: 100%;
+                text-align: left;
+                font-size: 32px;
+                font-weight: 400;
+                margin-bottom: 50px;
+            }
+            .about-skills {
+                text-align: justify;
+                width: 48%;
+                font-size: 24px;
+                font-weight: 300;
+                margin-bottom: 50px;
+                padding-top: 22px;
+            }
+            ul {
+                width: 48%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                list-style-type: circle;
+                position: relative;
+                left: 2.5%;
+                li {
+                    width: 30%;
+                    font-size: 18px;
+                    font-weight: 300;
+                    text-align: left;
+                    margin: 25px auto;
+                }
+            }
+        }
+    }
+    .contact {
+        width: 100%;
+        margin-bottom: 50px;
+        .content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            h2 {
+                width: 100%;
+                text-align: left;
+                font-size: 32px;
+                font-weight: 400;
+                margin-bottom: 50px;
+            }
+            p {
+                text-align: justify;
+                width: 48%;
+                font-size: 24px;
+                font-weight: 300;
+                margin-bottom: 50px;
+                a {
+                    color: #000;
+                    font-size: 22px;
+                    display: inline-block;
+                    padding-top: 50px;
+                }
+            }
+        }
+    }
+}
