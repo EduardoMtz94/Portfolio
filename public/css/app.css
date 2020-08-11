@@ -9,7 +9,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-content: center;
   justify-content: flex-end;
   flex-wrap: wrap;
@@ -31,7 +31,7 @@ header .content {
 }
 
 header .content .menu {
-  width: 95%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -45,7 +45,7 @@ header .content .menu a {
   margin: 20px 0;
   padding: 25px 20px;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 header .content .menu a::before {
@@ -64,7 +64,7 @@ header .content .menu a:hover::before {
 }
 
 header .content .title {
-  width: 95%;
+  width: 100%;
   margin-top: 150px;
   text-align: right;
 }
@@ -83,12 +83,12 @@ header .content .sidebar {
 header .content .sidebar ul {
   list-style-type: none;
   padding: 0;
-  transform: translateX(-155px);
+  transform: translateX(-205px);
 }
 
 header .content .sidebar ul li {
   display: block;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: transparent;
   text-align: right;
   padding: 10px;
   transition: all 1s;
@@ -114,7 +114,7 @@ header .content .sidebar ul li a i {
   text-align: center;
   margin-left: 10px;
   color: rgba(0, 0, 0, 0.3);
-  background-color: #fff;
+  background-color: transparent;
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -126,5 +126,165 @@ header .content .sidebar ul li a:hover i {
   color: #000;
   transform: rotate(360deg);
   transition: all 1.5s;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.main .about {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.main .about .content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main .about .content .foto {
+  width: 48%;
+  padding: 15px;
+  transition: all 250ms;
+}
+
+.main .about .content .foto img {
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main .about .content .foto:hover {
+  padding: 10px;
+}
+
+.main .about .content .foto:hover img {
+  box-shadow: 0 0 10px;
+}
+
+.main .about .content article {
+  width: 48%;
+  align-self: stretch;
+  text-align: justify;
+  font-size: 24px;
+  font-weight: 300;
+  padding: 10px;
+  position: relative;
+}
+
+.main .about .content article h2 {
+  width: 100%;
+  text-align: right;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.main .about .content article p {
+  position: absolute;
+  padding: 10px;
+  top: 30%;
+  left: 0%;
+}
+
+.main .skills {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.main .skills .content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main .skills .content h2 {
+  width: 100%;
+  text-align: left;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.main .skills .content .about-skills {
+  text-align: justify;
+  width: 48%;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 50px;
+  padding-top: 22px;
+}
+
+.main .skills .content ul {
+  width: 48%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  list-style-type: circle;
+  position: relative;
+  left: 2.5%;
+}
+
+.main .skills .content ul li {
+  width: 30%;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: left;
+  margin: 25px auto;
+}
+
+.main .contact {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.main .contact .content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main .contact .content h2 {
+  width: 100%;
+  text-align: left;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.main .contact .content p {
+  text-align: justify;
+  width: 48%;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.main .contact .content p a {
+  color: #000;
+  font-size: 22px;
+  display: inline-block;
+  padding-top: 50px;
+}
+
+footer {
+  width: 100%;
+  margin: 10px 0;
+}
+
+footer p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
 }
 

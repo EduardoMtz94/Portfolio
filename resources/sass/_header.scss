@@ -3,7 +3,7 @@ header {
     .content {
         height: 700px;
         .menu {
-            width: 95%;
+            width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
@@ -15,7 +15,7 @@ header {
                 margin: 20px 0;
                 padding: 25px 20px;
                 font-weight: 300;
-                font-size: 1rem;
+                font-size: 16px;
                 &::before {
                     content: "";
                     display: block;
@@ -32,7 +32,7 @@ header {
             }
         }
         .title {
-            width: 95%;
+            width: 100%;
             margin-top: 150px;
             text-align: right;
             h1 {
@@ -47,10 +47,10 @@ header {
             ul {
                 list-style-type: none;
                 padding: 0;
-                transform: translateX(-155px);
+                transform: translateX(-205px);
                 li {
                     display: block;
-                    background-color: rgba(#fff, 0.2);
+                    background-color: transparent;
                     text-align: right;
                     padding: 10px;
                     transition: all 1s;
@@ -70,7 +70,7 @@ header {
                             text-align: center;
                             margin-left: 10px;
                             color: rgba(#000, 0.3);
-                            background-color: #fff;
+                            background-color: transparent;
                             border-radius: 50%;
                             width: 20px;
                             height: 20px;
