@@ -95,6 +95,76 @@
             }
         }
     }
+    .portfolio {
+        width: 100%;
+        margin-bottom: 50px;
+        .content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            h2 {
+                width: 100%;
+                text-align: left;
+                font-size: 32px;
+                font-weight: 400;
+                margin-bottom: 50px;
+            }
+            .project {
+                width: 30%;
+                .foto {
+                    padding: 10px;
+                    transition: all 250ms;
+                    margin-bottom: 10px;
+                    img {
+                        border-radius: 10px;
+                        width: 100%;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+                h3 {
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
+                p {
+                    text-align: justify;
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
+                a {
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: #000;
+                    display: inline-block;
+                    &::before {
+                        content: "";
+                        display: block;
+                        height: 1.75px;
+                        width: 0%;
+                        background-color: #000;
+                        position: relative;
+                        transition: all ease-in 250ms;
+                        top: 25px;
+                    }
+                }
+                &:hover {
+                    .foto {
+                        padding: 5px;
+                        img{
+                            box-shadow: 0 0 5px;
+                        }
+                    }
+                    a {
+                        &::before {
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .contact {
         width: 100%;
         margin-bottom: 50px;

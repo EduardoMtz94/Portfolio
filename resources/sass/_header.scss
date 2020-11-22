@@ -43,15 +43,15 @@ header {
         .sidebar {
             position: fixed;
             top: 40%;
-            z-index: 1;
+            z-index: 0;
             ul {
                 list-style-type: none;
                 padding: 0;
-                transform: translateX(-205px);
+                transform: translateX(-130px);
                 li {
                     display: block;
                     background-color: transparent;
-                    text-align: right;
+                    text-align: left;
                     padding: 10px;
                     transition: all 1s;
                     font-weight: 300;
@@ -68,7 +68,7 @@ header {
                         }
                         i {
                             text-align: center;
-                            margin-left: 10px;
+                            margin-right: 10px;
                             color: rgba(#000, 0.3);
                             background-color: transparent;
                             border-radius: 50%;

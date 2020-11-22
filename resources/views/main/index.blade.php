@@ -3,9 +3,9 @@
         <div class="content">
             <div class="sidebar">
                 <ul>
-                    <li><a target="_blank" href="https://www.linkedin.com/in/eduardo-martinez-san/"><span>Linkedin</span><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    <li><a target="_blank" href="https://github.com/EduardoMtz94"><span>Github</span><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/el_aleman_mma/"><span>Instagram</span><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/eduardo-martinez-san/"><i class="fa fa-linkedin" aria-hidden="true"></i><span>Linkedin</span></a></li>
+                    <li><a target="_blank" href="https://github.com/EduardoMtz94"><i class="fa fa-github" aria-hidden="true"></i><span>Github</span></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/el_aleman_mma/"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a></li>
                 </ul>
             </div>
             <nav class="menu">
@@ -55,7 +55,39 @@
             </div>
         </section>
         <section class="portfolio" id="portfolio">
-            <div class="content"></div>
+            <div class="content">
+                <h2>Portafolio</h2>
+                <div class="project">
+                    <div class="foto">
+                        <img src="/img/tweety.jpeg" alt="Tweety" width="300">
+                    </div>
+                    <article>
+                        <h3>Tweety</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, eveniet.</p>
+                        <a href="#">Ver m&aacute;s ></a>
+                    </article>
+                </div>
+                <div class="project">
+                    <div class="foto">
+                        <img src="/img/restaurant.jpeg" alt="Restaurant" width="300">
+                    </div>
+                    <article>
+                        <h3>Restaurante</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, unde!</p>
+                        <a href="#">Ver m&aacute;s ></a>
+                    </article>
+                </div>
+                <div class="project">
+                    <div class="foto">
+                        <img src="/img/portfolio.jpeg" alt="Portfolio" width="300">
+                    </div>
+                    <article>
+                        <h3>Portafolio</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, est.</p>
+                        <a href="#">Ver m&aacute;s ></a>
+                    </article>
+                </div>
+            </div>
         </section>
         <section class="contact" id="contact">
             <div class="content">

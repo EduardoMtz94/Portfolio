@@ -17,7 +17,7 @@ body {
 
 .content {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
   overflow: hidden;
 }
@@ -77,19 +77,19 @@ header .content .title h1 {
 header .content .sidebar {
   position: fixed;
   top: 40%;
-  z-index: 1;
+  z-index: 0;
 }
 
 header .content .sidebar ul {
   list-style-type: none;
   padding: 0;
-  transform: translateX(-205px);
+  transform: translateX(-130px);
 }
 
 header .content .sidebar ul li {
   display: block;
   background-color: transparent;
-  text-align: right;
+  text-align: left;
   padding: 10px;
   transition: all 1s;
   font-weight: 300;
@@ -112,7 +112,7 @@ header .content .sidebar ul li a:hover span {
 
 header .content .sidebar ul li a i {
   text-align: center;
-  margin-left: 10px;
+  margin-right: 10px;
   color: rgba(0, 0, 0, 0.3);
   background-color: transparent;
   border-radius: 50%;
@@ -240,6 +240,85 @@ header .content .sidebar ul li a:hover i {
   font-weight: 300;
   text-align: left;
   margin: 25px auto;
+}
+
+.main .portfolio {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.main .portfolio .content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main .portfolio .content h2 {
+  width: 100%;
+  text-align: left;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.main .portfolio .content .project {
+  width: 30%;
+}
+
+.main .portfolio .content .project .foto {
+  padding: 10px;
+  transition: all 250ms;
+  margin-bottom: 10px;
+}
+
+.main .portfolio .content .project .foto img {
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main .portfolio .content .project h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.main .portfolio .content .project p {
+  text-align: justify;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.main .portfolio .content .project a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+}
+
+.main .portfolio .content .project a::before {
+  content: "";
+  display: block;
+  height: 1.75px;
+  width: 0%;
+  background-color: #000;
+  position: relative;
+  transition: all ease-in 250ms;
+  top: 25px;
+}
+
+.main .portfolio .content .project:hover .foto {
+  padding: 5px;
+}
+
+.main .portfolio .content .project:hover .foto img {
+  box-shadow: 0 0 5px;
+}
+
+.main .portfolio .content .project:hover a::before {
+  width: 90%;
 }
 
 .main .contact {
