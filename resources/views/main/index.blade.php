@@ -9,9 +9,9 @@
                 </ul>
             </div>
             <nav class="menu">
-                <a href="#about" id="about">Sobre mi</a>
-                <a href="#" id="portfolio">Portafolio</a>
-                <a href="#" id="contact">Contactame</a>
+                <a href="#about" id="btn-about">Sobre mi</a>
+                <a href="#portfolio" id="btn-portfolio">Portafolio</a>
+                <a href="#contact" id="btn-contact">Contactame</a>
             </nav>
     
             <div class="title">

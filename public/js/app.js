@@ -102,6 +102,28 @@ $(document).ready(function () {
     opacity: 1,
     margintTop: '150px'
   }, 2500);
+  var about = $('#about').offset().top,
+      portfolio = $('#portfolio').offset().top,
+      contact = $('#contact').offset().top;
+  $('#btn-about').on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: about
+    }, 1000);
+  });
+  $('#btn-portfolio').on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: portfolio
+    }, 1000);
+  });
+  $('#btn-contact').on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: contact
+    }, 1000);
+  });
+  console.log('prueba');
 });
 
 /***/ }),
@@ -124,8 +146,8 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/eduardomartinez/Documentos/freelance/Portafolio/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/eduardomartinez/Documentos/freelance/Portafolio/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /mnt/a/freelance/Portafolio/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /mnt/a/freelance/Portafolio/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
