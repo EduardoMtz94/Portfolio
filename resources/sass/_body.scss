@@ -112,6 +112,7 @@
             }
             .project {
                 width: 30%;
+                cursor: pointer;
                 .foto {
                     padding: 10px;
                     transition: all 250ms;
@@ -130,7 +131,7 @@
                 }
                 p {
                     text-align: justify;
-                    font-size: 24px;
+                    font-size: 22px;
                     margin-bottom: 10px;
                 }
                 a {
@@ -182,8 +183,8 @@
             }
             p {
                 text-align: justify;
-                width: 48%;
-                font-size: 24px;
+                width: 100%;
+                font-size: 22px;
                 font-weight: 300;
                 margin-bottom: 50px;
                 a {
@@ -191,6 +192,67 @@
                     font-size: 22px;
                     display: inline-block;
                     padding-top: 50px;
+                }
+            }
+            .contact-form {
+                width: 100%;
+                form {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .input-form {
+                        width: 48%;
+                        margin: 0 1%;
+                        position: relative;
+                        input {
+                            width: 100%;
+                            font-size: 22px;
+                            font-weight: 300;
+                            padding: 10px 0px;
+                            margin-bottom: 20px;
+                            border: none;
+                            border-bottom: 1px solid #000;
+                            background: transparent;
+                            outline: none;
+                        }
+                        label {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            padding: 10px 0px;
+                            pointer-events: none;
+                            transition: .5s;
+                            font-size: 22px;
+                            font-weight: 300;
+                        }
+                        & input:focus , .not-empty {
+                            ~ label {
+                                top: -30px;
+                                left: 0;
+                                font-size: 18px;
+                                font-weight: 300;
+                            }
+                        }
+                    }
+                    .message {
+                        width: 100%;
+                        margin-top: 75px;
+                    }
+                    button {
+                        width: 50%;
+                        padding: 20px;
+                        font-size: 20px;
+                        font-weight: 300;
+                        background-color: transparent;
+                        border-radius: 15px;
+                        margin: 20px 0;
+                        &:hover {
+                            box-shadow: 0 0 5px;
+                            cursor: pointer;
+                            width: 51%;
+                        }
+                    }
                 }
             }
         }

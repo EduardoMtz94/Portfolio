@@ -123,7 +123,13 @@ $(document).ready(function () {
       scrollTop: contact
     }, 1000);
   });
-  console.log('prueba');
+  $(".input").keyup(function () {
+    if ($(this).val()) {
+      $(this).addClass('not-empty');
+    } else {
+      $(this).removeClass('not-empty');
+    }
+  });
 });
 
 /***/ }),
@@ -146,8 +152,8 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /mnt/a/freelance/Portafolio/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /mnt/a/freelance/Portafolio/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/eduardomartinez/Documents/Personal/Portfolio/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/eduardomartinez/Documents/Personal/Portfolio/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

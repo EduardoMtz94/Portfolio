@@ -9,16 +9,16 @@
                 </ul>
             </div>
             <nav class="menu">
-                <a href="#about" id="btn-about">Sobre mi</a>
+                <a href="#about" id="btn-about">Sobre m&iacute;</a>
                 <a href="#portfolio" id="btn-portfolio">Portafolio</a>
-                <a href="#contact" id="btn-contact">Contactame</a>
+                <a href="#contact" id="btn-contact">Cont&aacute;ctame</a>
             </nav>
     
             <div class="title">
                 <h1>
                     <span>Hola,</span><br>
                     <span>Soy Eduardo Mart&iacute;nez,</span><br> 
-                    <span>Un Desarrollador Web Intergal&aacute;ctico</span>
+                    <span>Un Apasionado Desarrollador Web</span>
                 </h1>
             </div>
         </div>
@@ -93,14 +93,27 @@
             <div class="content">
                 <h2>Cont&aacute;ctame</h2>
                 <p>
-                    <a href="mailto:eduardo.martinez.sanchez@hotmail.com">
-                        <b>eduardo.martinez.sanchez@hotmail.com</b>
-                    </a>
-                </p>
-                <p>
                     Si est&aacute;s buscando un desarrollador, tienes alguna pregunta o solamente quieres contactar conmigo,
                     sientete libre de mandarme un correo o contactarme por instagram.
                 </p>
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        @csrf
+                        <div class="input-form">
+                            <input class="input" type="text" name="name" id="name">
+                            <label for="name">Nombre</label>
+                        </div>
+                        <div class="input-form">
+                            <input class="input" type="email" name="email" id="email">
+                            <label for="email">Correo Electr&oacute;nico</label>
+                        </div>
+                        <div class="input-form message">
+                            <input class="input" type="text" name="message" id="message"></textarea>
+                            <label for="message">Mensaje</label>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
             </div>
         </section>
     </section>
