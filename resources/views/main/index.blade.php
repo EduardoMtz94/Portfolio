@@ -31,7 +31,14 @@
                 </div>
                 <article>
                     <h2>Sobre m&iacute;</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab cupiditate dolorem debitis soluta voluptates in aliquam nemo exercitationem fugiat quia dolor tempora placeat dolores temporibus inventore consequuntur amet, ad necessitatibus.</p>
+                    <div class="about-me">
+                        <p>Tengo 26 años, soy un Ing. en Tenconlog&iacute;as de la informaci&oacute;n y comunicaciones, así como tambi&eacute;n 
+                            soy un desarrollador web de Morelia, Michoac&aacute;n, Mex.</p>
+                        <p>Durante ya casi 5 a&ntilde;os he trabajado en diferentes puestos como: Director de sistemas, Tech lead y Desarrollador backend.
+                            Esto me ha dado un gran conocimiento y experiencia en manejo y entregas de proyectos, estimación de tiempos, 
+                            desarrollo de software de alta calidad, uso de diferentes teconolog&iacute;as, entre otras cosas.
+                        </p>
+                    </div>
                 </article>
             </div>
         </section>
@@ -50,7 +57,9 @@
                     <li>HTML & CSS</li>
                 </ul>
                 <div class="about-skills">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, officia amet provident nostrum sed assumenda harum modi enim autem ducimus quibusdam optio nesciunt laudantium, deleniti quod quae ut, deserunt dolor.</p>
+                    <p>Durante mi vida laboral he desarrollado var&iacute;as habilidades dentro del campo de la tecnolog&iacute;a, entre ellas el 
+                        uso de diferente lenguajes de programaci&oacute;n, manejo de servidores, desarrollo de frontend, control de versiones, entre otras.
+                    </p>
                 </div>
             </div>
         </section>
@@ -63,7 +72,7 @@
                     </div>
                     <article>
                         <h3>Tweety</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, eveniet.</p>
+                        <p>Tweety es un proyecto de un curso de Laracast, en el cual desarrolle mis habilidades sobre el framework Laravel.</p>
                         <a href="#">Ver m&aacute;s ></a>
                     </article>
                 </div>
@@ -73,7 +82,7 @@
                     </div>
                     <article>
                         <h3>Restaurante</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, unde!</p>
+                        <p>Es un proyecto de una landing page, haciendo uso de mis conocimientos adquiridos en CSS y SASS.</p>
                         <a href="#">Ver m&aacute;s ></a>
                     </article>
                 </div>
@@ -83,7 +92,7 @@
                     </div>
                     <article>
                         <h3>Portafolio</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, est.</p>
+                        <p>Mi proyecto personal, en el cual plasmo mi informaci&oacute;n, as&iacute; como mis contactos para futuros proyectos.</p>
                         <a href="#">Ver m&aacute;s ></a>
                     </article>
                 </div>
