@@ -4,7 +4,26 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>lalocodes</title>
+        <title>{{ config('app.name', 'Lalo Codes | Web Developer | Desarrollador Web') }}</title>
+
+        <meta name="description" content="{{ $metaTagsSeo->description }}">
+        <meta name="robots" content="index,follow">
+        <meta name="keywords" content=" {{ $metaTagsSeo->keywords }}">
+
+        <meta property="og:type" content="{{ $metaTagsSeo->ogType }}" />
+        <meta property="og:title" content="{{ $metaTagsSeo->ogTitle }}" />
+        <meta property="og:description" content="{{ $metaTagsSeo->ogDescription }}" />
+        <meta property="og:image" content="{{ $metaTagsSeo->ogImage }}" />
+        <meta property="og:url" content="{{ $metaTagsSeo->ogUrl }}" />
+
+        <meta property="twitter:card" content="{{ $metaTagsSeo->twitter_card }}" />
+        <meta property="twitter:creator" content="{{ $metaTagsSeo->twitter_creator }}" />
+        <meta property="twitter:description" content="{{ $metaTagsSeo->twitter_description }}" />
+        <meta property="twitter:image" content="{{ $metaTagsSeo->twitter_image }}" />
+        <meta property="twitter:site" content="{{ $metaTagsSeo->twitter_site }}" />
+        <meta property="twitter:title" content="{{ $metaTagsSeo->twitter_title }}" />
+      
+        <link rel="canonical" href="{{ $metaTagsSeo->canonical }}">
 
         <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">

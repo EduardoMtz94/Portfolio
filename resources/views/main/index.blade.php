@@ -1,4 +1,4 @@
-<x-master>
+<x-master :metaTagsSeo="$metaTagsSeo">
     <header>
         <div class="content">
             <div class="sidebar">
@@ -27,7 +27,7 @@
         <section class="about" id="about">
             <div class="content">
                 <div class="foto">
-                    <img src="/img/me.jpeg" alt="Eduardo Martinez">
+                    <img src="/img/me.jpeg" alt="Eduardo Martinez | Web Developer | Desarrollador web">
                 </div>
                 <article>
                     <h2>Sobre m&iacute;</h2>
