@@ -4,7 +4,7 @@ return [
     'aboutMe' => 'About me',
     'portfolio' => 'Portfolio',
     'contactMe' => 'Contact me',
-    'hi' => 'Hi,',
+    'hi' => 'Hi there,',
     'iAm' => "I'm Eduardo Mart&iacute;nez,",
     'passionateDeveloper' => 'A Passionate Web Developer',
     'aboutFirst' => "I am 26 years old, at the age of 23 I graduated as an IT Engineer, as well as I am a web developer from Morelia, Michoac&aacute;n, Mex.",
