@@ -7,7 +7,7 @@ return [
     'hi' => 'Ol&aacute;,',
     'iAm' => "Eu sou o Eduardo Mart&iacute;nez,",
     'passionateDeveloper' => 'Um desenvolvedor da web apaixonado',
-    'aboutFirst' => "Eu tenho 26 anos, aos 23 me formei como engenheiro de TI, além de ser um desenvolvedor web em Morelia, Michoac & aacute; n, Mex.",
+    'aboutFirst' => "Eu tenho 26 anos, aos 23 me formei como engenheiro de TI, além de ser um desenvolvedor web em Morelia, Michoac&aacute;n, Mex.",
     'aboutSecond' => 'Por quase 5 anos trabalhei em diferentes cargos como: Diretor de Sistemas, Líder Técnico e Desenvolvedor Backend.
     Isso me deu grande conhecimento e experiência na gestão e entrega de projetos, estimativa de tempos, desenvolvimento de software de alta qualidade, utilizando diferentes tecnologias, entre outras coisas.',
     'mySkills' => 'Minhas habilidades',
