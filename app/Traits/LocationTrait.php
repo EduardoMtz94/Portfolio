@@ -12,7 +12,8 @@ trait LocationTrait {
         $portuguese = ['PT','BR','MZ','AO','GW','TL','GQ','MO','CV','ST'];
         $spanish = ['RA','BO','CL','CO','CR','CU','DO','EC','SV','GT','HN','MX','NI','PA','PE','PY','ES','UY','VE'];
         try{
-            $position = Location::get();
+            $ip = request()->ip();
+            $position = Location::get($ip);
     
             if(in_array($position->countryCode,$portuguese)){
                 App::setLocale('pt');
