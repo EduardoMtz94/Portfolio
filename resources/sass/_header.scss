@@ -1,7 +1,8 @@
 header {
     width: 100%;
     .content {
-        height: 700px;
+        height: 100vh;
+        min-height: 700px;
         .menu {
             width: 100%;
             display: flex;
@@ -33,7 +34,7 @@ header {
         }
         .title {
             width: 100%;
-            margin-top: 150px;
+            padding: 200px 0;
             text-align: right;
             h1 {
                 font-size: 40px;

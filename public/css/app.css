@@ -27,7 +27,8 @@ header {
 }
 
 header .content {
-  height: 700px;
+  height: 100vh;
+  min-height: 700px;
 }
 
 header .content .menu {
@@ -65,7 +66,7 @@ header .content .menu a:hover::before {
 
 header .content .title {
   width: 100%;
-  margin-top: 150px;
+  padding: 200px 0;
   text-align: right;
 }
 
@@ -137,7 +138,7 @@ header .content .sidebar ul li a:hover i {
 
 .main .about {
   width: 100%;
-  margin-bottom: 50px;
+  padding: 100px 0;
 }
 
 .main .about .content {
@@ -197,7 +198,7 @@ header .content .sidebar ul li a:hover i {
 
 .main .skills {
   width: 100%;
-  margin-bottom: 50px;
+  padding: 100px 0;
 }
 
 .main .skills .content {
@@ -245,7 +246,7 @@ header .content .sidebar ul li a:hover i {
 
 .main .portfolio {
   width: 100%;
-  margin-bottom: 50px;
+  padding: 100px 0;
 }
 
 .main .portfolio .content {
@@ -325,7 +326,7 @@ header .content .sidebar ul li a:hover i {
 
 .main .contact {
   width: 100%;
-  margin-bottom: 50px;
+  padding: 100px 0;
 }
 
 .main .contact .content {
@@ -440,7 +441,7 @@ footer p {
 
 @media screen and (max-width: 700px) {
   header .content .title {
-    padding: 0px 20px;
+    padding: 200px 20px;
   }
 
   header .content .title h1 {
@@ -453,6 +454,10 @@ footer p {
 
   .main {
     padding: 0px 20px;
+  }
+
+  .main .about {
+    padding: 0px;
   }
 
   .main .about .content {
