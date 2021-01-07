@@ -3,9 +3,9 @@
         <div class="content">
             <div class="sidebar">
                 <ul>
-                    <li><a target="_blank" href="https://www.linkedin.com/in/eduardo-martinez-san/"><i class="fa fa-linkedin" aria-hidden="true"></i><span>Linkedin</span></a></li>
-                    <li><a target="_blank" href="https://github.com/EduardoMtz94"><i class="fa fa-github" aria-hidden="true"></i><span>Github</span></a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/el_aleman_mma/"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a></li>
+                    <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/eduardo-martinez-san/"><i class="fa fa-linkedin" aria-hidden="true"></i><span>Linkedin</span></a></li>
+                    <li><a target="_blank" rel="noopener" href="https://github.com/EduardoMtz94"><i class="fa fa-github" aria-hidden="true"></i><span>Github</span></a></li>
+                    <li><a target="_blank" rel="noopener" href="https://www.instagram.com/el_aleman_mma/"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a></li>
                 </ul>
             </div>
             <nav class="menu">
@@ -68,7 +68,7 @@
                     <article>
                         <h3>Tweety</h3>
                         <p>@lang('text.aboutTweety')</p>
-                        <a href="#">@lang('text.seeMore')</a>
+                        <a href="#" target="_blank" rel="noopener">@lang('text.seeMore')</a>
                     </article>
                 </div>
                 <div class="project">
@@ -78,17 +78,17 @@
                     <article>
                         <h3>Restaurante</h3>
                         <p>@lang('text.aboutRestaurante')</p>
-                        <a href="#">@lang('text.seeMore')</a>
+                        <a href="https://restaurant.lalocodes.com/" target="_blank" rel="noopener">@lang('text.seeMore')</a>
                     </article>
                 </div>
                 <div class="project">
                     <div class="foto">
-                        <img src="/img/portfolio.jpeg" alt="Portfolio" width="300">
+                        <img src="/img/portfolio.jpeg" alt="Startup" width="300">
                     </div>
                     <article>
-                        <h3>Portafolio</h3>
-                        <p>@lang('text.aboutPortfolio')</p>
-                        <a href="#">@lang('text.seeMore')</a>
+                        <h3>Startup</h3>
+                        <p>@lang('text.aboutStartup')</p>
+                        <a href="https://startup.lalocodes.com/" target="_blank" rel="noopener">@lang('text.seeMore')</a>
                     </article>
                 </div>
             </div>

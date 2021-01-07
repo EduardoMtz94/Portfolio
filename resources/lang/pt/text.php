@@ -16,7 +16,7 @@ return [
     'seeMore' => 'Ver mais >',
     'aboutTweety' => 'Tweety é um projeto de curso da Laracast, no qual desenvolvi minhas habilidades no framework Laravel.',
     'aboutRestaurante' => 'É um projeto de landing page, fazendo uso dos meus conhecimentos adquiridos em CSS e SASS.',
-    'aboutPortfolio' => 'Meu projeto pessoal, no qual coloco minhas informações, como meus contatos para projetos futuros.',
+    'aboutStartup' => 'É um projeto onde eu pode praticar meus conhecimentos e minhas habilidades no Bootstrap, CSS e SASS.',
     'contactText' => 'Se você está procurando um desenvolvedor, tem alguma dúvida ou apenas deseja entrar em contato comigo, fique à vontade para me enviar um e-mail ou entrar em contato pelo instagram.',
     'name' => 'Nome',
     'email' => 'E-mail',
