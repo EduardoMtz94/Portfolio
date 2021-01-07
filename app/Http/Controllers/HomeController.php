@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactMe;
 use App\Traits\FacebookTrait;
 use App\Traits\LocationTrait;
 use App\Traits\MetaTagsTrait;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
@@ -24,6 +26,14 @@ class HomeController extends Controller
 
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        $name = $data['name'];
+        $email = $data['email'];
+        $bodyMessage = $data['bodyMessage'];
+
+        Mail::to('eduardomtartinezsan94@gmail.com')->send(new ContactMe($name, $email, $bodyMessage));
+
+        toastr()->success('Gracias por ponerte en contacto conmigo, te responderé lo más pronto posible!', 'Email enviado');
+        return redirect('/');
     }
 }

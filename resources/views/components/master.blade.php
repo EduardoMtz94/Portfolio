@@ -40,11 +40,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        @toastr_css
     </head>
     <body>
         {{ $slot }}
         <script src="{{ asset('js/jquery-3.5.1.min.js') }}"></script>
         <script src="{{ asset('js/app.js') }}"></script>
         <script async defer src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        @toastr_js
+        @toastr_render
     </body>
 </html>

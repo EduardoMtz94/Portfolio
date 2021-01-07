@@ -100,19 +100,19 @@
                     @lang('text.contactText')
                 </p>
                 <div class="contact-form">
-                    <form action="#" method="POST">
+                    <form action="/" method="POST">
                         @csrf
                         <div class="input-form">
-                            <input class="input" type="text" name="name" id="name">
+                            <input class="input" type="text" name="name" id="name" required>
                             <label for="name">@lang('text.name')</label>
                         </div>
                         <div class="input-form">
-                            <input class="input" type="email" name="email" id="email">
+                            <input class="input" type="email" name="email" id="email" required>
                             <label for="email">@lang('text.email')</label>
                         </div>
                         <div class="input-form message">
-                            <input class="input" type="text" name="message" id="message"></textarea>
-                            <label for="message">@lang('text.message')</label>
+                            <input class="input" type="text" name="bodyMessage" id="bodyMessage" required>
+                            <label for="bodyMessage">@lang('text.message')</label>
                         </div>
                         <button type="submit">@lang('text.send')</button>
                     </form>
