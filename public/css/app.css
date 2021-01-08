@@ -22,6 +22,70 @@ body {
   overflow: hidden;
 }
 
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+
+  80% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+
+  80% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+
+  80% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+
+  80% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 header {
   width: 100%;
 }
@@ -37,6 +101,10 @@ header .content .menu {
   flex-direction: row;
   justify-content: flex-end;
   flex-wrap: wrap;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-animation: fadeInDown 0.75s ease-in-out;
+          animation: fadeInDown 0.75s ease-in-out;
 }
 
 header .content .menu a {
@@ -68,6 +136,10 @@ header .content .title {
   width: 100%;
   padding: 200px 0;
   text-align: right;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-animation: fadeInRight 0.75s ease-in-out;
+          animation: fadeInRight 0.75s ease-in-out;
 }
 
 header .content .title h1 {
