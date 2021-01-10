@@ -94,14 +94,15 @@
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
-  /*$('.title').css({
-      opacity: 0,
-      margintTop: 0
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll > 10) {
+      $("#navbar").addClass('menuScroll');
+    } else {
+      $("#navbar").removeClass('menuScroll');
+    }
   });
-   $('.title').animate({
-      opacity: 1,
-      margintTop: '150px'
-  }, 2500);*/
   var about = $('#about').offset().top,
       portfolio = $('#portfolio').offset().top,
       contact = $('#contact').offset().top;

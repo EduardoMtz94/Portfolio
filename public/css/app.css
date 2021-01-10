@@ -90,34 +90,32 @@ header {
   width: 100%;
 }
 
-header .content {
-  height: 100vh;
-  min-height: 700px;
-}
-
-header .content .menu {
-  width: 100%;
+header .menu {
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   flex-wrap: wrap;
+  position: fixed;
+  z-index: 20;
+  transition: background-color 0.4s ease-out;
+  padding: 0px 155px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-animation: fadeInDown 0.75s ease-in-out;
           animation: fadeInDown 0.75s ease-in-out;
 }
 
-header .content .menu a {
+header .menu a {
   text-decoration: none;
   display: inline-block;
   color: #000;
-  margin: 20px 0;
   padding: 25px 20px;
   font-weight: 300;
   font-size: 16px;
 }
 
-header .content .menu a::before {
+header .menu a::before {
   content: "";
   display: block;
   height: 1.5px;
@@ -128,13 +126,30 @@ header .content .menu a::before {
   top: 25px;
 }
 
-header .content .menu a:hover::before {
+header .menu a:hover::before {
   width: 90%;
+}
+
+header .menuScroll {
+  background-color: #000;
+}
+
+header .menuScroll a {
+  color: #fff;
+}
+
+header .menuScroll a::before {
+  background-color: #fff;
+}
+
+header .content {
+  height: 100vh;
+  min-height: 700px;
 }
 
 header .content .title {
   width: 100%;
-  padding: 200px 0;
+  padding: 300px 0;
   text-align: right;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -512,8 +527,13 @@ footer p {
 }
 
 @media screen and (max-width: 700px) {
+  header .menu {
+    width: 100vw;
+    padding: 0;
+  }
+
   header .content .title {
-    padding: 200px 20px;
+    padding: 300px 20px;
   }
 
   header .content .title h1 {

@@ -1,5 +1,10 @@
 <x-master :metaTagsSeo="$metaTagsSeo">
     <header>
+        <nav class="menu" id="navbar">
+            <a href="#about" id="btn-about">@lang('text.aboutMe')</a>
+            <a href="#portfolio" id="btn-portfolio">@lang('text.portfolio')</a>
+            <a href="#contact" id="btn-contact">@lang('text.contactMe')</a>
+        </nav>
         <div class="content">
             <div class="sidebar">
                 <ul>
@@ -8,11 +13,6 @@
                     <li><a target="_blank" rel="noopener" href="https://www.instagram.com/el_aleman_mma/"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a></li>
                 </ul>
             </div>
-            <nav class="menu">
-                <a href="#about" id="btn-about">@lang('text.aboutMe')</a>
-                <a href="#portfolio" id="btn-portfolio">@lang('text.portfolio')</a>
-                <a href="#contact" id="btn-contact">@lang('text.contactMe')</a>
-            </nav>
     
             <div class="title">
                 <h1>
