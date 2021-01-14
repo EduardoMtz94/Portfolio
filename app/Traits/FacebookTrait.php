@@ -40,8 +40,8 @@ trait FacebookTrait {
         try {
             $requestToken = $this->client->request('GET','https://graph.facebook.com/oauth/access_token',[
                 'query' => [
-                    'client_id'=>440658350453867,
-                    'client_secret'=>'a07888f75c4fa6177694fd5f4a4a21b5',
+                    'client_id'=>env('FB_CLIENT_ID'),
+                    'client_secret'=>env('FB_CLIENT_SECRET'),
                     'grant_type'=>'client_credentials'
                 ]
             ]);

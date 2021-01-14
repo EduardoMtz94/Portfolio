@@ -22,33 +22,100 @@ body {
   overflow: hidden;
 }
 
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+
+  80% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+
+  80% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+
+  80% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+
+  80% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 header {
   width: 100%;
 }
 
-header .content {
-  height: 700px;
-}
-
-header .content .menu {
-  width: 100%;
+header .menu {
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   flex-wrap: wrap;
+  position: fixed;
+  z-index: 20;
+  transition: background-color 0.4s ease-out;
+  padding: 0px 155px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-animation: fadeInDown 0.75s ease-in-out;
+          animation: fadeInDown 0.75s ease-in-out;
 }
 
-header .content .menu a {
+header .menu a {
   text-decoration: none;
   display: inline-block;
   color: #000;
-  margin: 20px 0;
   padding: 25px 20px;
   font-weight: 300;
   font-size: 16px;
 }
 
-header .content .menu a::before {
+header .menu a::before {
   content: "";
   display: block;
   height: 1.5px;
@@ -59,14 +126,37 @@ header .content .menu a::before {
   top: 25px;
 }
 
-header .content .menu a:hover::before {
-  width: 90%;
+@media all and (min-width: 900px) {
+  header .menu a:hover::before {
+    width: 90%;
+  }
+}
+
+header .menuScroll {
+  background-color: #000;
+}
+
+header .menuScroll a {
+  color: #fff;
+}
+
+header .menuScroll a::before {
+  background-color: #fff;
+}
+
+header .content {
+  height: 100vh;
+  min-height: 700px;
 }
 
 header .content .title {
   width: 100%;
-  margin-top: 150px;
+  padding: 300px 0;
   text-align: right;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-animation: fadeInRight 0.75s ease-in-out;
+          animation: fadeInRight 0.75s ease-in-out;
 }
 
 header .content .title h1 {
@@ -105,9 +195,11 @@ header .content .sidebar ul li a span {
   opacity: 0;
 }
 
-header .content .sidebar ul li a:hover span {
-  opacity: 1;
-  transition: all 1.5s;
+@media all and (min-width: 900px) {
+  header .content .sidebar ul li a:hover span {
+    opacity: 1;
+    transition: all 1.5s;
+  }
 }
 
 header .content .sidebar ul li a i {
@@ -122,10 +214,12 @@ header .content .sidebar ul li a i {
   transform: rotate(0deg);
 }
 
-header .content .sidebar ul li a:hover i {
-  color: #000;
-  transform: rotate(360deg);
-  transition: all 1.5s;
+@media all and (min-width: 900px) {
+  header .content .sidebar ul li a:hover i {
+    color: #000;
+    transform: rotate(360deg);
+    transition: all 1.5s;
+  }
 }
 
 .main {
@@ -137,7 +231,7 @@ header .content .sidebar ul li a:hover i {
 
 .main .about {
   width: 100%;
-  margin-bottom: 50px;
+  padding: 100px 0;
 }
 
 .main .about .content {
@@ -161,12 +255,14 @@ header .content .sidebar ul li a:hover i {
   margin-right: auto;
 }
 
-.main .about .content .foto:hover {
-  padding: 10px;
-}
+@media all and (min-width: 900px) {
+  .main .about .content .foto:hover {
+    padding: 10px;
+  }
 
-.main .about .content .foto:hover img {
-  box-shadow: 0 0 10px;
+  .main .about .content .foto:hover img {
+    box-shadow: 0 0 10px;
+  }
 }
 
 .main .about .content article {
@@ -197,7 +293,7 @@ header .content .sidebar ul li a:hover i {
 
 .main .skills {
   width: 100%;
-  margin-bottom: 50px;
+  padding: 100px 0;
 }
 
 .main .skills .content {
@@ -245,7 +341,7 @@ header .content .sidebar ul li a:hover i {
 
 .main .portfolio {
   width: 100%;
-  margin-bottom: 50px;
+  padding: 100px 0;
 }
 
 .main .portfolio .content {
@@ -311,21 +407,23 @@ header .content .sidebar ul li a:hover i {
   top: 25px;
 }
 
-.main .portfolio .content .project:hover .foto {
-  padding: 5px;
-}
+@media all and (min-width: 900px) {
+  .main .portfolio .content .project:hover .foto {
+    padding: 5px;
+  }
 
-.main .portfolio .content .project:hover .foto img {
-  box-shadow: 0 0 5px;
-}
+  .main .portfolio .content .project:hover .foto img {
+    box-shadow: 0 0 5px;
+  }
 
-.main .portfolio .content .project:hover a::before {
-  width: 90%;
+  .main .portfolio .content .project:hover a::before {
+    width: 90%;
+  }
 }
 
 .main .contact {
   width: 100%;
-  margin-bottom: 50px;
+  padding: 100px 0;
 }
 
 .main .contact .content {
@@ -351,80 +449,41 @@ header .content .sidebar ul li a:hover i {
   margin-bottom: 50px;
 }
 
-.main .contact .content p a {
+.main .contact .content .contact-mail {
+  width: 50%;
+  text-align: center;
+  padding: 25px;
+}
+
+.main .contact .content .contact-mail a {
   color: #000;
   font-size: 22px;
+  font-weight: 300;
+  text-decoration: none;
   display: inline-block;
-  padding-top: 50px;
 }
 
-.main .contact .content .contact-form {
-  width: 100%;
-}
-
-.main .contact .content .contact-form form {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.main .contact .content .contact-form form .input-form {
-  width: 48%;
-  margin: 0 1%;
+.main .contact .content .contact-mail a::before {
+  content: "";
+  display: block;
+  height: 2.5px;
+  width: 0%;
+  background-color: #000;
   position: relative;
+  transition: all ease-in 250ms;
+  top: 30px;
 }
 
-.main .contact .content .contact-form form .input-form input {
-  width: 100%;
-  font-size: 22px;
-  font-weight: 300;
-  padding: 10px 0px;
-  margin-bottom: 20px;
-  border: none;
-  border-bottom: 1px solid #000;
-  background: transparent;
-  outline: none;
+@media all and (min-width: 900px) {
+  .main .contact .content .contact-mail a:hover::before {
+    width: 90%;
+  }
 }
 
-.main .contact .content .contact-form form .input-form label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px 0px;
-  pointer-events: none;
-  transition: 0.5s;
-  font-size: 22px;
-  font-weight: 300;
-}
-
-.main .contact .content .contact-form form .input-form input:focus ~ label,
-.main .contact .content .contact-form form .input-form .not-empty ~ label {
-  top: -30px;
-  left: 0;
-  font-size: 18px;
-  font-weight: 300;
-}
-
-.main .contact .content .contact-form form .message {
-  width: 100%;
-  margin-top: 75px;
-}
-
-.main .contact .content .contact-form form button {
+.main .contact .content .contact-media {
   width: 50%;
-  padding: 20px;
-  font-size: 20px;
-  font-weight: 300;
-  background-color: transparent;
-  border-radius: 15px;
-  margin: 20px 0;
-}
-
-.main .contact .content .contact-form form button:hover {
-  box-shadow: 0 0 5px;
-  cursor: pointer;
-  width: 51%;
+  text-align: center;
+  padding: 25px;
 }
 
 footer {
@@ -439,8 +498,13 @@ footer p {
 }
 
 @media screen and (max-width: 700px) {
+  header .menu {
+    width: 100vw;
+    padding: 0;
+  }
+
   header .content .title {
-    padding: 0px 20px;
+    padding: 300px 20px;
   }
 
   header .content .title h1 {
@@ -453,6 +517,10 @@ footer p {
 
   .main {
     padding: 0px 20px;
+  }
+
+  .main .about {
+    padding: 0px;
   }
 
   .main .about .content {
@@ -535,17 +603,8 @@ footer p {
     width: 100%;
   }
 
-  .main .contact .content .contact-form form .input-form {
-    width: 100%;
-    margin: 0;
-  }
-
-  .main .contact .content .contact-form form button {
-    width: 100%;
-  }
-
-  .main .contact .content .contact-form form button:hover {
-    box-shadow: 0 0 5px;
+  .main .contact .content .contact-mail,
+  .main .contact .content .contact-media {
     width: 100%;
   }
 }
@@ -575,15 +634,12 @@ footer p {
     font-size: 20px;
   }
 
-  .main .contact .content .contact-form form .input-form input {
-    font-size: 20px;
+  .main .contact .content .contact-mail {
+    padding: 10px 0;
   }
 
-  .main .contact .content .contact-form form .input-form label {
-    font-size: 20px;
-  }
-
-  .main .contact .content .contact-form form button {
+  .main .contact .content .contact-mail a {
+    text-decoration: underline;
     font-size: 20px;
   }
 }
@@ -609,15 +665,12 @@ footer p {
     font-size: 18px;
   }
 
-  .main .contact .content .contact-form form .input-form input {
-    font-size: 18px;
+  .main .contact .content .contact-mail {
+    padding: 0;
   }
 
-  .main .contact .content .contact-form form .input-form label {
-    font-size: 18px;
-  }
-
-  .main .contact .content .contact-form form button {
+  .main .contact .content .contact-mail a {
+    text-decoration: underline;
     font-size: 18px;
   }
 }

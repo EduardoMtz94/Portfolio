@@ -1,18 +1,18 @@
 <x-master :metaTagsSeo="$metaTagsSeo">
     <header>
+        <nav class="menu" id="navbar">
+            <a href="#about" id="btn-about">@lang('text.aboutMe')</a>
+            <a href="#portfolio" id="btn-portfolio">@lang('text.portfolio')</a>
+            <a href="#contact" id="btn-contact">@lang('text.contactMe')</a>
+        </nav>
         <div class="content">
             <div class="sidebar">
                 <ul>
-                    <li><a target="_blank" href="https://www.linkedin.com/in/eduardo-martinez-san/"><i class="fa fa-linkedin" aria-hidden="true"></i><span>Linkedin</span></a></li>
-                    <li><a target="_blank" href="https://github.com/EduardoMtz94"><i class="fa fa-github" aria-hidden="true"></i><span>Github</span></a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/el_aleman_mma/"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a></li>
+                    <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/eduardo-martinez-san/"><i class="fa fa-linkedin" aria-hidden="true"></i><span>Linkedin</span></a></li>
+                    <li><a target="_blank" rel="noopener" href="https://github.com/EduardoMtz94"><i class="fa fa-github" aria-hidden="true"></i><span>Github</span></a></li>
+                    <li><a target="_blank" rel="noopener" href="https://www.instagram.com/el_aleman_mma/"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a></li>
                 </ul>
             </div>
-            <nav class="menu">
-                <a href="#about" id="btn-about">@lang('text.aboutMe')</a>
-                <a href="#portfolio" id="btn-portfolio">@lang('text.portfolio')</a>
-                <a href="#contact" id="btn-contact">@lang('text.contactMe')</a>
-            </nav>
     
             <div class="title">
                 <h1>
@@ -68,27 +68,27 @@
                     <article>
                         <h3>Tweety</h3>
                         <p>@lang('text.aboutTweety')</p>
-                        <a href="#">@lang('text.seeMore')</a>
+                        <a href="https://tweety.lalocodes.com/" target="_blank" rel="noopener">@lang('text.seeMore')</a>
                     </article>
                 </div>
                 <div class="project">
                     <div class="foto">
-                        <img src="/img/restaurant.jpeg" alt="Restaurant" width="300">
+                        <img src="/img/restaurant.png" alt="Restaurant" width="300">
                     </div>
                     <article>
                         <h3>Restaurante</h3>
                         <p>@lang('text.aboutRestaurante')</p>
-                        <a href="#">@lang('text.seeMore')</a>
+                        <a href="https://restaurant.lalocodes.com/" target="_blank" rel="noopener">@lang('text.seeMore')</a>
                     </article>
                 </div>
                 <div class="project">
                     <div class="foto">
-                        <img src="/img/portfolio.jpeg" alt="Portfolio" width="300">
+                        <img src="/img/startup.png" alt="Startup" width="300">
                     </div>
                     <article>
-                        <h3>Portafolio</h3>
-                        <p>@lang('text.aboutPortfolio')</p>
-                        <a href="#">@lang('text.seeMore')</a>
+                        <h3>Startup</h3>
+                        <p>@lang('text.aboutStartup')</p>
+                        <a href="https://startup.lalocodes.com/" target="_blank" rel="noopener">@lang('text.seeMore')</a>
                     </article>
                 </div>
             </div>
@@ -99,35 +99,21 @@
                 <p>
                     @lang('text.contactText')
                 </p>
-                <div class="contact-form">
-                    <form action="#" method="POST">
-                        @csrf
-                        <div class="input-form">
-                            <input class="input" type="text" name="name" id="name">
-                            <label for="name">@lang('text.name')</label>
-                        </div>
-                        <div class="input-form">
-                            <input class="input" type="email" name="email" id="email">
-                            <label for="email">@lang('text.email')</label>
-                        </div>
-                        <div class="input-form message">
-                            <input class="input" type="text" name="message" id="message"></textarea>
-                            <label for="message">@lang('text.message')</label>
-                        </div>
-                        <button type="submit">@lang('text.send')</button>
-                    </form>
+                <div class="contact-mail">
+                    <a href="mailto:eduardomartinezsan94@gmail.com">
+                        eduardomartinezsan94@gmail.com
+                    </a>
                 </div>
-                <!--<a class="twitter-timeline"
-                    href="https://twitter.com/AlemanEMS"
-                    data-chrome="nofooter noborders"
-                    data-width="300"
-                    data-height="500">
-                    Tweets by @AlemanEMS
-                </a>-->
+                <div class="contact-media">
+                    <a href="https://twitter.com/messages/compose?recipient_id=1850631468&text=Hola%20Eduardo"
+                    class="twitter-dm-button" data-screen-name="@AlemanEMS" data-size="large">
+                        Message @AlemanEMS
+                    </a>
+                </div>
             </div>
         </section>
     </section>
     <footer>
-        <p>Copyright © 2020, Eduardo Mart&iacute;nez</p> 
+        <p>Copyright © 2021, Eduardo Mart&iacute;nez</p> 
     </footer>
 </x-master>
