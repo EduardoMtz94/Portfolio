@@ -27,8 +27,10 @@ header {
                 transition: all ease-in 250ms;
                 top: 25px;
             }
-            &:hover::before {
-                width: 90%;
+            @media all and (min-width: 900px) {
+                &:hover::before {
+                    width: 90%;
+                }
             }
         }
         backface-visibility: hidden;
@@ -79,10 +81,13 @@ header {
                         span {
                             opacity: 0;
                         }
-                        &:hover span{
-                            opacity: 1;
-                            transition: all 1.5s;
+                        @media all and (min-width: 900px) {
+                            &:hover span{
+                                opacity: 1;
+                                transition: all 1.5s;
+                            }
                         }
+                        
                         i {
                             text-align: center;
                             margin-right: 10px;
@@ -94,10 +99,12 @@ header {
                             font-size: 20px;
                             transform: rotate(0deg);
                         }
-                        &:hover i {
-                            color: #000;
-                            transform: rotate(360deg);
-                            transition: all 1.5s;
+                        @media all and (min-width: 900px) {
+                            &:hover i {
+                                color: #000;
+                                transform: rotate(360deg);
+                                transition: all 1.5s;
+                            }
                         }
                     }
                 }

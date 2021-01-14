@@ -126,8 +126,10 @@ header .menu a::before {
   top: 25px;
 }
 
-header .menu a:hover::before {
-  width: 90%;
+@media all and (min-width: 900px) {
+  header .menu a:hover::before {
+    width: 90%;
+  }
 }
 
 header .menuScroll {
@@ -193,9 +195,11 @@ header .content .sidebar ul li a span {
   opacity: 0;
 }
 
-header .content .sidebar ul li a:hover span {
-  opacity: 1;
-  transition: all 1.5s;
+@media all and (min-width: 900px) {
+  header .content .sidebar ul li a:hover span {
+    opacity: 1;
+    transition: all 1.5s;
+  }
 }
 
 header .content .sidebar ul li a i {
@@ -210,10 +214,12 @@ header .content .sidebar ul li a i {
   transform: rotate(0deg);
 }
 
-header .content .sidebar ul li a:hover i {
-  color: #000;
-  transform: rotate(360deg);
-  transition: all 1.5s;
+@media all and (min-width: 900px) {
+  header .content .sidebar ul li a:hover i {
+    color: #000;
+    transform: rotate(360deg);
+    transition: all 1.5s;
+  }
 }
 
 .main {
@@ -249,12 +255,14 @@ header .content .sidebar ul li a:hover i {
   margin-right: auto;
 }
 
-.main .about .content .foto:hover {
-  padding: 10px;
-}
+@media all and (min-width: 900px) {
+  .main .about .content .foto:hover {
+    padding: 10px;
+  }
 
-.main .about .content .foto:hover img {
-  box-shadow: 0 0 10px;
+  .main .about .content .foto:hover img {
+    box-shadow: 0 0 10px;
+  }
 }
 
 .main .about .content article {
@@ -399,16 +407,18 @@ header .content .sidebar ul li a:hover i {
   top: 25px;
 }
 
-.main .portfolio .content .project:hover .foto {
-  padding: 5px;
-}
+@media all and (min-width: 900px) {
+  .main .portfolio .content .project:hover .foto {
+    padding: 5px;
+  }
 
-.main .portfolio .content .project:hover .foto img {
-  box-shadow: 0 0 5px;
-}
+  .main .portfolio .content .project:hover .foto img {
+    box-shadow: 0 0 5px;
+  }
 
-.main .portfolio .content .project:hover a::before {
-  width: 90%;
+  .main .portfolio .content .project:hover a::before {
+    width: 90%;
+  }
 }
 
 .main .contact {
@@ -509,10 +519,12 @@ header .content .sidebar ul li a:hover i {
   margin: 20px 0;
 }
 
-.main .contact .content .contact-form form button:hover {
-  box-shadow: 0 0 5px;
-  cursor: pointer;
-  width: 51%;
+@media all and (min-width: 900px) {
+  .main .contact .content .contact-form form button:hover {
+    box-shadow: 0 0 5px;
+    cursor: pointer;
+    width: 51%;
+  }
 }
 
 footer {
