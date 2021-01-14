@@ -20,7 +20,7 @@ return [
     'aboutRestaurante' => 'Es un proyecto de una landing page, haciendo uso de mis conocimientos adquiridos en CSS y SASS.',
     'aboutStartup' => 'Startup es un proyecto personal en el cual practique mis conocimientos sobre Bootstrap, CSS y SASS.',
     'contactText' => 'Si est&aacute;s buscando un desarrollador, tienes alguna pregunta o solamente quieres contactar conmigo,
-    sientete libre de mandarme un correo o contactarme por instagram.',
+    sientete libre de mandarme un correo o contactarme por mis redes sociales.',
     'name' => 'Nombre',
     'email' => 'Correo Electr&oacute;nico',
     'message' => 'Mensaje',

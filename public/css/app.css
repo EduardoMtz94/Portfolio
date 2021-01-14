@@ -449,82 +449,41 @@ header .content .sidebar ul li a i {
   margin-bottom: 50px;
 }
 
-.main .contact .content p a {
+.main .contact .content .contact-mail {
+  width: 50%;
+  text-align: center;
+  padding: 25px;
+}
+
+.main .contact .content .contact-mail a {
   color: #000;
   font-size: 22px;
+  font-weight: 300;
+  text-decoration: none;
   display: inline-block;
-  padding-top: 50px;
 }
 
-.main .contact .content .contact-form {
-  width: 100%;
-}
-
-.main .contact .content .contact-form form {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.main .contact .content .contact-form form .input-form {
-  width: 48%;
-  margin: 0 1%;
+.main .contact .content .contact-mail a::before {
+  content: "";
+  display: block;
+  height: 2.5px;
+  width: 0%;
+  background-color: #000;
   position: relative;
-}
-
-.main .contact .content .contact-form form .input-form input {
-  width: 100%;
-  font-size: 22px;
-  font-weight: 300;
-  padding: 10px 0px;
-  margin-bottom: 20px;
-  border: none;
-  border-bottom: 1px solid #000;
-  background: transparent;
-  outline: none;
-}
-
-.main .contact .content .contact-form form .input-form label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px 0px;
-  pointer-events: none;
-  transition: 0.5s;
-  font-size: 22px;
-  font-weight: 300;
-}
-
-.main .contact .content .contact-form form .input-form input:focus ~ label,
-.main .contact .content .contact-form form .input-form .not-empty ~ label {
-  top: -30px;
-  left: 0;
-  font-size: 18px;
-  font-weight: 300;
-}
-
-.main .contact .content .contact-form form .message {
-  width: 100%;
-  margin-top: 75px;
-}
-
-.main .contact .content .contact-form form button {
-  width: 50%;
-  padding: 20px;
-  font-size: 20px;
-  font-weight: 300;
-  background-color: transparent;
-  border-radius: 15px;
-  margin: 20px 0;
+  transition: all ease-in 250ms;
+  top: 30px;
 }
 
 @media all and (min-width: 900px) {
-  .main .contact .content .contact-form form button:hover {
-    box-shadow: 0 0 5px;
-    cursor: pointer;
-    width: 51%;
+  .main .contact .content .contact-mail a:hover::before {
+    width: 90%;
   }
+}
+
+.main .contact .content .contact-media {
+  width: 50%;
+  text-align: center;
+  padding: 25px;
 }
 
 footer {
@@ -644,17 +603,8 @@ footer p {
     width: 100%;
   }
 
-  .main .contact .content .contact-form form .input-form {
-    width: 100%;
-    margin: 0;
-  }
-
-  .main .contact .content .contact-form form button {
-    width: 100%;
-  }
-
-  .main .contact .content .contact-form form button:hover {
-    box-shadow: 0 0 5px;
+  .main .contact .content .contact-mail,
+  .main .contact .content .contact-media {
     width: 100%;
   }
 }
@@ -684,15 +634,12 @@ footer p {
     font-size: 20px;
   }
 
-  .main .contact .content .contact-form form .input-form input {
-    font-size: 20px;
+  .main .contact .content .contact-mail {
+    padding: 20px 0;
   }
 
-  .main .contact .content .contact-form form .input-form label {
-    font-size: 20px;
-  }
-
-  .main .contact .content .contact-form form button {
+  .main .contact .content .contact-mail a {
+    text-decoration: underline;
     font-size: 20px;
   }
 }
@@ -718,15 +665,12 @@ footer p {
     font-size: 18px;
   }
 
-  .main .contact .content .contact-form form .input-form input {
-    font-size: 18px;
+  .main .contact .content .contact-mail {
+    padding: 20px 0;
   }
 
-  .main .contact .content .contact-form form .input-form label {
-    font-size: 18px;
-  }
-
-  .main .contact .content .contact-form form button {
+  .main .contact .content .contact-mail a {
+    text-decoration: underline;
     font-size: 18px;
   }
 }

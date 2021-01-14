@@ -99,23 +99,16 @@
                 <p>
                     @lang('text.contactText')
                 </p>
-                <div class="contact-form">
-                    <form action="/" method="POST">
-                        @csrf
-                        <div class="input-form">
-                            <input class="input" type="text" name="name" id="name" required>
-                            <label for="name">@lang('text.name')</label>
-                        </div>
-                        <div class="input-form">
-                            <input class="input" type="email" name="email" id="email" required>
-                            <label for="email">@lang('text.email')</label>
-                        </div>
-                        <div class="input-form message">
-                            <input class="input" type="text" name="bodyMessage" id="bodyMessage" required>
-                            <label for="bodyMessage">@lang('text.message')</label>
-                        </div>
-                        <button type="submit">@lang('text.send')</button>
-                    </form>
+                <div class="contact-mail">
+                    <a href="mailto:eduardomartinezsan94@gmail.com">
+                        eduardomartinezsan94@gmail.com
+                    </a>
+                </div>
+                <div class="contact-media">
+                    <a href="https://twitter.com/messages/compose?recipient_id=1850631468&text=Hola%20Eduardo"
+                    class="twitter-dm-button" data-screen-name="@AlemanEMS" data-size="large">
+                        Message @AlemanEMS
+                    </a>
                 </div>
             </div>
         </section>

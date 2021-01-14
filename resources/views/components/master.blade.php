@@ -22,6 +22,8 @@
         <meta property="twitter:image" content="{{ $metaTagsSeo->twitter_image }}" />
         <meta property="twitter:site" content="{{ $metaTagsSeo->twitter_site }}" />
         <meta property="twitter:title" content="{{ $metaTagsSeo->twitter_title }}" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <link rel="me" href="https://twitter.com/AlemanEMS">
       
         <link rel="canonical" href="{{ $metaTagsSeo->canonical }}">
 
@@ -44,6 +46,7 @@
         {{ $slot }}
         <script src="{{ asset('js/jquery-3.5.1.min.js') }}"></script>
         <script src="{{ asset('js/app.js') }}"></script>
+        <script async defer src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         @toastr_js
         @toastr_render
     </body>
