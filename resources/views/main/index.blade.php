@@ -63,7 +63,7 @@
                 <h2>@lang('text.portfolio')</h2>
                 <div class="project">
                     <div class="foto">
-                        <img src="/img/tweety.jpeg" alt="Tweety" width="300" height="175">
+                        <img src="/img/tweety.jpeg" alt="Tweety" width="300">
                     </div>
                     <article>
                         <h3>Tweety</h3>
@@ -73,7 +73,7 @@
                 </div>
                 <div class="project">
                     <div class="foto">
-                        <img src="/img/restaurant.png" alt="Restaurant" width="300" height="175">
+                        <img src="/img/restaurant.png" alt="Restaurant" width="300">
                     </div>
                     <article>
                         <h3>Restaurante</h3>
@@ -83,7 +83,7 @@
                 </div>
                 <div class="project">
                     <div class="foto">
-                        <img src="/img/startup.png" alt="Startup" width="300" height="175">
+                        <img src="/img/startup.png" alt="Startup" width="300">
                     </div>
                     <article>
                         <h3>Startup</h3>
