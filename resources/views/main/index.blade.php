@@ -63,17 +63,17 @@
                 <h2>@lang('text.portfolio')</h2>
                 <div class="project">
                     <div class="foto">
-                        <img src="/img/tweety.jpeg" alt="Tweety" width="300">
+                        <img src="/img/tweety.jpeg" alt="Tweety" width="300" height="175">
                     </div>
                     <article>
                         <h3>Tweety</h3>
                         <p>@lang('text.aboutTweety')</p>
-                        <a href="#" target="_blank" rel="noopener">@lang('text.seeMore')</a>
+                        <a href="https://tweety.lalocodes.com/" target="_blank" rel="noopener">@lang('text.seeMore')</a>
                     </article>
                 </div>
                 <div class="project">
                     <div class="foto">
-                        <img src="/img/restaurant.jpeg" alt="Restaurant" width="300">
+                        <img src="/img/restaurant.png" alt="Restaurant" width="300" height="175">
                     </div>
                     <article>
                         <h3>Restaurante</h3>
@@ -83,7 +83,7 @@
                 </div>
                 <div class="project">
                     <div class="foto">
-                        <img src="/img/portfolio.jpeg" alt="Startup" width="300">
+                        <img src="/img/startup.png" alt="Startup" width="300" height="175">
                     </div>
                     <article>
                         <h3>Startup</h3>
@@ -117,17 +117,10 @@
                         <button type="submit">@lang('text.send')</button>
                     </form>
                 </div>
-                <!--<a class="twitter-timeline"
-                    href="https://twitter.com/AlemanEMS"
-                    data-chrome="nofooter noborders"
-                    data-width="300"
-                    data-height="500">
-                    Tweets by @AlemanEMS
-                </a>-->
             </div>
         </section>
     </section>
     <footer>
-        <p>Copyright © 2020, Eduardo Mart&iacute;nez</p> 
+        <p>Copyright © 2021, Eduardo Mart&iacute;nez</p> 
     </footer>
 </x-master>
