@@ -15,8 +15,6 @@
         <meta property="og:description" content="{{ $metaTagsSeo->ogDescription }}" />
         <meta property="og:image" content="{{ $metaTagsSeo->ogImage }}" />
         <meta property="og:url" content="{{ $metaTagsSeo->ogUrl }}" />
-        <meta name="twitter:widgets:theme" content="dark">
-        <link rel="me" href="https://twitter.com/AlemanEMS">
 
         <meta property="twitter:card" content="{{ $metaTagsSeo->twitter_card }}" />
         <meta property="twitter:creator" content="{{ $metaTagsSeo->twitter_creator }}" />
@@ -24,17 +22,32 @@
         <meta property="twitter:image" content="{{ $metaTagsSeo->twitter_image }}" />
         <meta property="twitter:site" content="{{ $metaTagsSeo->twitter_site }}" />
         <meta property="twitter:title" content="{{ $metaTagsSeo->twitter_title }}" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <link rel="me" href="https://twitter.com/AlemanEMS">
       
         <link rel="canonical" href="{{ $metaTagsSeo->canonical }}">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{ env('GTAG') }}"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', "{{ env('GTAG') }}");
+        </script>
 
         <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        @toastr_css
     </head>
     <body>
         {{ $slot }}
         <script src="{{ asset('js/jquery-3.5.1.min.js') }}"></script>
         <script src="{{ asset('js/app.js') }}"></script>
         <script async defer src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        @toastr_js
+        @toastr_render
     </body>
 </html>
