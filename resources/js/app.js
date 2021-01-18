@@ -1,10 +1,14 @@
+require('./bootstrap');
+
 $(document).ready(function () {
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         if (scroll > 10) {
             $("#navbar").addClass('menuScroll');
+            $("#img-logo").attr("src","/img/lalo-codes-white.png");
         } else {
             $("#navbar").removeClass('menuScroll');
+            $("#img-logo").attr("src","/img/lalo-codes-black.png");
         }
     });
 

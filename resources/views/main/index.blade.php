@@ -1,28 +1,59 @@
 <x-master :metaTagsSeo="$metaTagsSeo">
-    <header>
-        <nav class="menu" id="navbar">
-            <a href="#about" id="btn-about">@lang('text.aboutMe')</a>
-            <a href="#portfolio" id="btn-portfolio">@lang('text.portfolio')</a>
-            <a href="#contact" id="btn-contact">@lang('text.contactMe')</a>
-        </nav>
-        <div class="content">
-            <div class="sidebar">
-                <ul>
-                    <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/eduardo-martinez-san/"><i class="fa fa-linkedin" aria-hidden="true"></i><span>Linkedin</span></a></li>
-                    <li><a target="_blank" rel="noopener" href="https://github.com/EduardoMtz94"><i class="fa fa-github" aria-hidden="true"></i><span>Github</span></a></li>
-                    <li><a target="_blank" rel="noopener" href="https://www.instagram.com/el_aleman_mma/"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a></li>
-                </ul>
+    <nav>
+        <div class="container-fluid lc-container fixed-top" id="navbar">
+            <div class="row">
+                <div class="col-sm-4">
+                    <ul class="nav">
+                        <li class="nav-item py-1">
+                            <a class="nav-link" class="text-decoration-none" href="/">
+                                <img src="{{ asset('img/lalo-codes-black.png') }}" alt="Lalo codes logo" width="100" id="img-logo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-8 lc-menu">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item py-3">
+                            <a class="nav-link" class="text-decoration-none" href="#about" id="btn-about">@lang('text.aboutMe')</a>
+                        </li>
+                        <li class="nav-item py-3">
+                            <a class="nav-link" class="text-decoration-none" href="#portfolio" id="btn-portfolio">@lang('text.portfolio')</a>
+                        </li>
+                        <li class="nav-item py-3">
+                            <a class="nav-link" class="text-decoration-none" href="#contact" id="btn-contact">@lang('text.contactMe')</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </div>
+    </nav>
     
-            <div class="title">
-                <h1>
-                    <span>@lang('text.hi')</span><br>
-                    <span>@lang('text.iAm')</span><br> 
-                    <span>@lang('text.passionateDeveloper')</span>
-                </h1>
+    <aside>
+        <div class="lc-sidebar">
+            <ul>
+                <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/eduardo-martinez-san/"><i class="fa fa-linkedin" aria-hidden="true"></i><span>Linkedin</span></a></li>
+                <li><a target="_blank" rel="noopener" href="https://github.com/EduardoMtz94"><i class="fa fa-github" aria-hidden="true"></i><span>Github</span></a></li>
+                <li><a target="_blank" rel="noopener" href="https://www.instagram.com/el_aleman_mma/"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <header>
+        <div class="container-xl lc-container">
+            <div class="row">
+                <div class="col-sm-12 lc-title-section">
+                    <div class="lc-title">
+                        <h1>
+                            <span>@lang('text.hi')</span><br>
+                            <span>@lang('text.iAm')</span><br> 
+                            <span>@lang('text.passionateDeveloper')</span>
+                        </h1>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
+
     <section class="main">
         <section class="about" id="about">
             <div class="content">

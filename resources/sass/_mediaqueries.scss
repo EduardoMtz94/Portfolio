@@ -1,19 +1,20 @@
+@media screen and (max-width: 1199px) {
+    aside {
+        .lc-sidebar {
+            ul {
+                transform: translateX(-5px);
+            }
+        }
+    }
+}
 @media screen and (max-width: 700px) {
     header {
-        .menu {
-            width: 100vw;
-            padding: 0;
-        }
-        .content {
-            .title {
-                padding: 300px 20px;
-                h1 {
-                    font-size: 30px;
-                }
-            }
-            .sidebar {
-                ul {
-                    transform: translateX(-5px);
+        .container-xl {
+            .lc-title-section {
+                .lc-title {
+                    h1 {
+                        font-size: 30px;
+                    }
                 }
             }
         }
@@ -92,10 +93,12 @@
 
 @media screen and (max-width: 500px) {
     header {
-        .content {
-            .title {
-                h1 {
-                    font-size: 20px;
+        .container-xl {
+            .lc-title-section {
+                .lc-title {
+                    h1 {
+                        font-size: 20px;
+                    }
                 }
             }
         }
@@ -148,10 +151,12 @@
 
 @media screen and (max-width: 360px) {
     header {
-        .content {
-            .title {
-                h1 {
-                    font-size: 18px;
+        .container-xl {
+            .lc-title-section {
+                .lc-title {
+                    h1 {
+                        font-size: 18px;
+                    }
                 }
             }
         }

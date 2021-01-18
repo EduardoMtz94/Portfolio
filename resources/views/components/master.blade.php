@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>{{ config('app.name', 'Lalo Codes | Web Developer | Desarrollador Web') }}</title>
+        <link rel="icon" type="image/png" href="{{ asset('img/lalo-codes-favicon.png') }}"/>
 
         <meta name="description" content="{{ $metaTagsSeo->description }}">
         <meta name="robots" content="{{ $metaTagsSeo->robots }}">
@@ -44,7 +45,6 @@
     </head>
     <body>
         {{ $slot }}
-        <script src="{{ asset('js/jquery-3.5.1.min.js') }}"></script>
         <script src="{{ asset('js/app.js') }}"></script>
         <script async defer src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         @toastr_js
