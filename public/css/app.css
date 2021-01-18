@@ -11228,38 +11228,29 @@ body {
   font-weight: 300;
 }
 
-.main .portfolio {
-  width: 100%;
+.main .lc-portfolio {
   padding: 100px 0;
 }
 
-.main .portfolio .content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.main .lc-portfolio .lc-container .lc-portfolio-title {
+  padding-bottom: 2.5rem;
 }
 
-.main .portfolio .content h2 {
+.main .lc-portfolio .lc-container .lc-portfolio-title h2 {
   width: 100%;
   text-align: left;
   font-size: 32px;
   font-weight: 400;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
-.main .portfolio .content .project {
-  width: 30%;
-  cursor: pointer;
-}
-
-.main .portfolio .content .project .foto {
+.main .lc-portfolio .lc-container .lc-portfolio-project .lc-portfolio-foto {
   padding: 10px;
   transition: all 250ms;
   margin-bottom: 10px;
 }
 
-.main .portfolio .content .project .foto img {
+.main .lc-portfolio .lc-container .lc-portfolio-project .lc-portfolio-foto img {
   border-radius: 10px;
   width: 100%;
   display: block;
@@ -11267,25 +11258,25 @@ body {
   margin-right: auto;
 }
 
-.main .portfolio .content .project h3 {
+.main .lc-portfolio .lc-container .lc-portfolio-project h3 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-.main .portfolio .content .project p {
+.main .lc-portfolio .lc-container .lc-portfolio-project p {
   text-align: justify;
   font-size: 22px;
   margin-bottom: 10px;
 }
 
-.main .portfolio .content .project a {
+.main .lc-portfolio .lc-container .lc-portfolio-project a {
   font-size: 20px;
   text-decoration: none;
   color: #000;
   display: inline-block;
 }
 
-.main .portfolio .content .project a::before {
+.main .lc-portfolio .lc-container .lc-portfolio-project a::before {
   content: "";
   display: block;
   height: 1.75px;
@@ -11293,19 +11284,19 @@ body {
   background-color: #000;
   position: relative;
   transition: all ease-in 250ms;
-  top: 25px;
+  top: 30px;
 }
 
 @media all and (min-width: 992px) {
-  .main .portfolio .content .project:hover .foto {
+  .main .lc-portfolio .lc-container .lc-portfolio-project:hover .lc-portfolio-foto {
     padding: 5px;
   }
 
-  .main .portfolio .content .project:hover .foto img {
+  .main .lc-portfolio .lc-container .lc-portfolio-project:hover .lc-portfolio-foto img {
     box-shadow: 0 0 5px;
   }
 
-  .main .portfolio .content .project:hover a::before {
+  .main .lc-portfolio .lc-container .lc-portfolio-project:hover a::before {
     width: 90%;
   }
 }
@@ -11464,20 +11455,20 @@ footer p {
     padding: 0;
   }
 
-  .main .portfolio {
-    padding: 10px;
+  .main .lc-portfolio {
+    padding: 50px 0;
   }
 
-  .main .portfolio .content {
-    flex-direction: column;
+  .main .lc-portfolio .lc-container .lc-portfolio-title {
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 
-  .main .portfolio .content .project {
-    width: 100%;
-    margin-bottom: 45px;
+  .main .lc-portfolio .lc-container .lc-portfolio-project {
+    padding-bottom: 3rem;
   }
 
-  .main .portfolio .content .project a {
+  .main .lc-portfolio .lc-container .lc-portfolio-project a {
     font-weight: bold;
   }
 
@@ -11516,7 +11507,11 @@ footer p {
     font-size: 20px;
   }
 
-  .main .portfolio .content .project p {
+  .main .lc-portfolio {
+    padding: 50px 0;
+  }
+
+  .main .lc-portfolio .lc-container .lc-portfolio-project p {
     font-size: 20px;
   }
 
@@ -11547,7 +11542,11 @@ footer p {
     font-size: 18px;
   }
 
-  .main .portfolio .content .project p {
+  .main .lc-portfolio {
+    padding: 50px 0;
+  }
+
+  .main .lc-portfolio .lc-container .lc-portfolio-project p {
     font-size: 18px;
   }
 

@@ -83,13 +83,15 @@
                 }
             }
         }
-        .portfolio {
-            padding: 10px;
-            .content {
-                flex-direction: column;
-                .project {
-                    width: 100%;
-                    margin-bottom: 45px;
+        .lc-portfolio {
+            padding: 50px 0;
+            .lc-container {
+                .lc-portfolio-title {
+                    padding-left: 0.5rem;
+                    padding-bottom: 0.5rem;
+                }
+                .lc-portfolio-project {
+                    padding-bottom: 3rem;
                     a {
                         font-weight: bold;
                     }
@@ -149,9 +151,10 @@
                 }
             }
         }
-        .portfolio {
-            .content {
-                .project {
+        .lc-portfolio {
+            padding: 50px 0;
+            .lc-container {
+                .lc-portfolio-project {
                     p {
                         font-size: 20px;
                     }
@@ -210,9 +213,10 @@
                 }
             }
         }
-        .portfolio {
-            .content {
-                .project {
+        .lc-portfolio {
+            padding: 50px 0;
+            .lc-container {
+                .lc-portfolio-project {
                     p {
                         font-size: 18px;
                     }

@@ -78,7 +78,7 @@
         <section class="lc-skills">
             <div class="container-xl lc-container">
                 <div class="row">
-                    <div class="col-sm-12 lc-title-skills">
+                    <div class="col-12 lc-title-skills">
                         <h2>@lang('text.mySkills')</h2>
                     </div>
                 </div>
@@ -102,38 +102,50 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio" id="portfolio">
-            <div class="content">
-                <h2>@lang('text.portfolio')</h2>
-                <div class="project">
-                    <div class="foto">
-                        <img src="/img/tweety.jpeg" alt="Tweety" width="300">
+        <section class="lc-portfolio" id="portfolio">
+            <div class="container-xl lc-container">
+                <div class="row">
+                    <div class="col-12 lc-portfolio-title">
+                        <h2>@lang('text.portfolio')</h2>
                     </div>
-                    <article>
-                        <h3>Tweety</h3>
-                        <p>@lang('text.aboutTweety')</p>
-                        <a href="https://tweety.lalocodes.com/" target="_blank" rel="noopener">@lang('text.seeMore')</a>
-                    </article>
                 </div>
-                <div class="project">
-                    <div class="foto">
-                        <img src="/img/restaurant.png" alt="Restaurant" width="300">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <div class="lc-portfolio-project">
+                            <div class="lc-portfolio-foto">
+                                <img src="/img/tweety.jpeg" alt="Tweety" width="300">
+                            </div>
+                            <article>
+                                <h3>Tweety</h3>
+                                <p>@lang('text.aboutTweety')</p>
+                                <a href="https://tweety.lalocodes.com/" target="_blank" rel="noopener">@lang('text.seeMore')</a>
+                            </article>
+                        </div>
                     </div>
-                    <article>
-                        <h3>Restaurante</h3>
-                        <p>@lang('text.aboutRestaurante')</p>
-                        <a href="https://restaurant.lalocodes.com/" target="_blank" rel="noopener">@lang('text.seeMore')</a>
-                    </article>
-                </div>
-                <div class="project">
-                    <div class="foto">
-                        <img src="/img/startup.png" alt="Startup" width="300">
+                    <div class="col-sm-12 col-md-4">
+                        <div class="lc-portfolio-project">
+                            <div class="lc-portfolio-foto">
+                                <img src="/img/restaurant.png" alt="Restaurant" width="300">
+                            </div>
+                            <article>
+                                <h3>Restaurante</h3>
+                                <p>@lang('text.aboutRestaurante')</p>
+                                <a href="https://restaurant.lalocodes.com/" target="_blank" rel="noopener">@lang('text.seeMore')</a>
+                            </article>
+                        </div>
                     </div>
-                    <article>
-                        <h3>Startup</h3>
-                        <p>@lang('text.aboutStartup')</p>
-                        <a href="https://startup.lalocodes.com/" target="_blank" rel="noopener">@lang('text.seeMore')</a>
-                    </article>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="lc-portfolio-project">
+                            <div class="lc-portfolio-foto">
+                                <img src="/img/startup.png" alt="Startup" width="300">
+                            </div>
+                            <article>
+                                <h3>Startup</h3>
+                                <p>@lang('text.aboutStartup')</p>
+                                <a href="https://startup.lalocodes.com/" target="_blank" rel="noopener">@lang('text.seeMore')</a>
+                            </article>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
