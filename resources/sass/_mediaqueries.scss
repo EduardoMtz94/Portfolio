@@ -1,19 +1,23 @@
 @media screen and (max-width: 1199px) {
-    aside {
-        .lc-sidebar {
-            ul {
-                transform: translateX(-5px);
+    .lc-header {
+        aside {
+            .lc-sidebar {
+                ul {
+                    transform: translateX(-5px);
+                }
             }
         }
     }
 }
-@media screen and (max-width: 700px) {
-    header {
-        .container-xl {
-            .lc-title-section {
-                .lc-title {
-                    h1 {
-                        font-size: 30px;
+@media screen and (max-width: 767px) {
+    .lc-header {
+        header {
+            .container-xl {
+                .lc-title-section {
+                    .lc-title {
+                        h1 {
+                            font-size: 30px;
+                        }
                     }
                 }
             }
@@ -21,24 +25,25 @@
     }
     .main {
         padding: 0px 20px;
-        .about {
-            padding: 0px;
-            .content {
-                flex-direction: column;
-                .foto {
-                    padding: 10px;
-                    width: 100%;
-                }
-                article {
-                    width: 100%;
-                    h2 {
-                        text-align: left;
-                        margin-bottom: 0px;
+        .lc-about {
+            padding: 50px 0;
+            .lc-container {
+                .row { 
+                    padding: 0 0.5rem;
+                    .lc-foto {
+                        padding: 0;
                     }
-                    p {
-                        position: sticky;
-                        font-size: 30px;
-                        padding: 0px;
+                    .lc-text-about {
+                        padding: 2rem 0;
+                        h2 {
+                            text-align: left;
+                        }
+                        .lc-about-me {
+                            p {
+                                font-size: 30px;
+                                padding: 0px;
+                            }
+                        }
                     }
                 }
             }
@@ -92,23 +97,29 @@
 }
 
 @media screen and (max-width: 500px) {
-    header {
-        .container-xl {
-            .lc-title-section {
-                .lc-title {
-                    h1 {
-                        font-size: 20px;
+    .lc-header {
+        header {
+            .container-xl {
+                .lc-title-section {
+                    .lc-title {
+                        h1 {
+                            font-size: 20px;
+                        }
                     }
                 }
             }
         }
     }
     .main {
-        .about {
-            .content {
-                article {
-                    p {
-                        font-size: 20px;
+        .lc-about {
+            .lc-container {
+                .row { 
+                    .lc-text-about {
+                        .lc-about-me {
+                            p {
+                                font-size: 20px;
+                            }
+                        }
                     }
                 }
             }
@@ -150,23 +161,29 @@
 }
 
 @media screen and (max-width: 360px) {
-    header {
-        .container-xl {
-            .lc-title-section {
-                .lc-title {
-                    h1 {
-                        font-size: 18px;
+    .lc-header {
+        header {
+            .container-xl {
+                .lc-title-section {
+                    .lc-title {
+                        h1 {
+                            font-size: 18px;
+                        }
                     }
                 }
             }
         }
     }
     .main {
-        .about {
-            .content {
-                article {
-                    p {
-                        font-size: 18px;
+        .lc-about {
+            .lc-container {
+                .row { 
+                    .lc-text-about {
+                        .lc-about-me {
+                            p {
+                                font-size: 18px;
+                            }
+                        }
                     }
                 }
             }

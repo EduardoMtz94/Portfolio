@@ -1,111 +1,113 @@
-nav {
-    width: 100%;
-    backface-visibility: hidden;
-    animation: fadeInDown .75s ease-in-out;
-    .lc-container {
-        transition: background-color 0.4s ease-out;
-        .lc-menu {
-            a {
-                color: #000;
-                font-weight: 300;
-                font-size: 16px;
-                &::before {
-                    content: "";
-                    display: block;
-                    height: 1.5px;
-                    width: 0%;
-                    background-color: #000;
-                    position: relative;
-                    transition: all ease-in 250ms;
-                    top: 25px;
-                }
-                @media all and (min-width: 900px) {
-                    &:hover::before {
-                        width: 90%;
-                    }
-                }
-            }
-        }
-    }
-    .menuScroll {
-        background-color: #000 !important;
-        .lc-menu {
-            a {
-                color: #fff;
-                &::before {
-                    background-color: #fff;
-                }
-            }
-        }
-    }
-}
-aside {
-    .lc-sidebar {
-        position: fixed;
-        top: 40%;
-        z-index: 0;
-        ul {
-            list-style-type: none;
-            padding: 0;
-            transform: translateX(50px);
-            li {
-                display: block;
-                background-color: transparent;
-                text-align: left;
-                padding: 10px;
-                transition: all 1s;
-                font-weight: 300;
-                width: 200px;
+.lc-header {
+    nav {
+        width: 100%;
+        backface-visibility: hidden;
+        animation: fadeInDown .75s ease-in-out;
+        .lc-container {
+            transition: background-color 0.4s ease-out;
+            .lc-menu {
                 a {
-                    text-decoration: none;
                     color: #000;
-                    span {
-                        opacity: 0;
+                    font-weight: 300;
+                    font-size: 16px;
+                    &::before {
+                        content: "";
+                        display: block;
+                        height: 1.5px;
+                        width: 0%;
+                        background-color: #000;
+                        position: relative;
+                        transition: all ease-in 250ms;
+                        top: 25px;
                     }
                     @media all and (min-width: 900px) {
-                        &:hover span{
-                            opacity: 1;
-                            transition: all 1.5s;
+                        &:hover::before {
+                            width: 90%;
                         }
                     }
-                    
-                    i {
-                        text-align: center;
-                        margin-right: 10px;
-                        color: rgba(#000, 0.3);
-                        background-color: transparent;
-                        border-radius: 50%;
-                        width: 20px;
-                        height: 20px;
-                        font-size: 20px;
-                        transform: rotate(0deg);
+                }
+            }
+        }
+        .menuScroll {
+            background-color: #000 !important;
+            .lc-menu {
+                a {
+                    color: #fff;
+                    &::before {
+                        background-color: #fff;
                     }
-                    @media all and (min-width: 900px) {
-                        &:hover i {
-                            color: #000;
-                            transform: rotate(360deg);
-                            transition: all 1.5s;
+                }
+            }
+        }
+    }
+    aside {
+        .lc-sidebar {
+            position: fixed;
+            top: 40%;
+            z-index: 5;
+            ul {
+                list-style-type: none;
+                padding: 0;
+                transform: translateX(50px);
+                li {
+                    display: block;
+                    background-color: transparent;
+                    text-align: left;
+                    padding: 10px;
+                    transition: all 1s;
+                    font-weight: 300;
+                    width: 200px;
+                    a {
+                        text-decoration: none;
+                        color: #000;
+                        span {
+                            opacity: 0;
+                        }
+                        @media all and (min-width: 900px) {
+                            &:hover span{
+                                opacity: 1;
+                                transition: all 1.5s;
+                            }
+                        }
+                        
+                        i {
+                            text-align: center;
+                            margin-right: 10px;
+                            color: rgba(#000, 0.3);
+                            background-color: transparent;
+                            border-radius: 50%;
+                            width: 20px;
+                            height: 20px;
+                            font-size: 20px;
+                            transform: rotate(0deg);
+                        }
+                        @media all and (min-width: 900px) {
+                            &:hover i {
+                                color: #000;
+                                transform: rotate(360deg);
+                                transition: all 1.5s;
+                            }
                         }
                     }
                 }
             }
         }
     }
-}
-header {
-    .lc-container {
-        height: 100vh;
-        .lc-title-section {
-            .lc-title {
-                width: 100%;
-                padding: 300px 0;
-                text-align: right;
-                h1 {
-                    font-size: 40px;
-                    font-weight: 700;
+    header {
+        .lc-container {
+            height: 100vh;
+            .lc-title-section {
+                .lc-title {
+                    width: 100%;
+                    padding: 300px 0;
+                    text-align: right;
+                    h1 {
+                        font-size: 40px;
+                        font-weight: 700;
+                    }
+                    backface-visibility: hidden;
+                    animation: fadeInRight .75s ease-in-out;
                 }
-                backface-visibility: hidden;
-                animation: fadeInRight .75s ease-in-out;
             }
         }
     }

@@ -10918,11 +10918,6 @@ body {
   font-family: "Mulish", sans-serif;
   font-size: 16px;
   font-weight: 300;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: flex-end;
-  flex-wrap: wrap;
 }
 
 .content {
@@ -10996,7 +10991,7 @@ body {
   }
 }
 
-nav {
+.lc-header nav {
   width: 100%;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -11004,17 +10999,17 @@ nav {
           animation: fadeInDown 0.75s ease-in-out;
 }
 
-nav .lc-container {
+.lc-header nav .lc-container {
   transition: background-color 0.4s ease-out;
 }
 
-nav .lc-container .lc-menu a {
+.lc-header nav .lc-container .lc-menu a {
   color: #000;
   font-weight: 300;
   font-size: 16px;
 }
 
-nav .lc-container .lc-menu a::before {
+.lc-header nav .lc-container .lc-menu a::before {
   content: "";
   display: block;
   height: 1.5px;
@@ -11026,36 +11021,36 @@ nav .lc-container .lc-menu a::before {
 }
 
 @media all and (min-width: 900px) {
-  nav .lc-container .lc-menu a:hover::before {
+  .lc-header nav .lc-container .lc-menu a:hover::before {
     width: 90%;
   }
 }
 
-nav .menuScroll {
+.lc-header nav .menuScroll {
   background-color: #000 !important;
 }
 
-nav .menuScroll .lc-menu a {
+.lc-header nav .menuScroll .lc-menu a {
   color: #fff;
 }
 
-nav .menuScroll .lc-menu a::before {
+.lc-header nav .menuScroll .lc-menu a::before {
   background-color: #fff;
 }
 
-aside .lc-sidebar {
+.lc-header aside .lc-sidebar {
   position: fixed;
   top: 40%;
-  z-index: 0;
+  z-index: 5;
 }
 
-aside .lc-sidebar ul {
+.lc-header aside .lc-sidebar ul {
   list-style-type: none;
   padding: 0;
   transform: translateX(50px);
 }
 
-aside .lc-sidebar ul li {
+.lc-header aside .lc-sidebar ul li {
   display: block;
   background-color: transparent;
   text-align: left;
@@ -11065,23 +11060,23 @@ aside .lc-sidebar ul li {
   width: 200px;
 }
 
-aside .lc-sidebar ul li a {
+.lc-header aside .lc-sidebar ul li a {
   text-decoration: none;
   color: #000;
 }
 
-aside .lc-sidebar ul li a span {
+.lc-header aside .lc-sidebar ul li a span {
   opacity: 0;
 }
 
 @media all and (min-width: 900px) {
-  aside .lc-sidebar ul li a:hover span {
+  .lc-header aside .lc-sidebar ul li a:hover span {
     opacity: 1;
     transition: all 1.5s;
   }
 }
 
-aside .lc-sidebar ul li a i {
+.lc-header aside .lc-sidebar ul li a i {
   text-align: center;
   margin-right: 10px;
   color: rgba(0, 0, 0, 0.3);
@@ -11094,18 +11089,18 @@ aside .lc-sidebar ul li a i {
 }
 
 @media all and (min-width: 900px) {
-  aside .lc-sidebar ul li a:hover i {
+  .lc-header aside .lc-sidebar ul li a:hover i {
     color: #000;
     transform: rotate(360deg);
     transition: all 1.5s;
   }
 }
 
-header .lc-container {
+.lc-header header .lc-container {
   height: 100vh;
 }
 
-header .lc-container .lc-title-section .lc-title {
+.lc-header header .lc-container .lc-title-section .lc-title {
   width: 100%;
   padding: 300px 0;
   text-align: right;
@@ -11115,7 +11110,7 @@ header .lc-container .lc-title-section .lc-title {
           animation: fadeInRight 0.75s ease-in-out;
 }
 
-header .lc-container .lc-title-section .lc-title h1 {
+.lc-header header .lc-container .lc-title-section .lc-title h1 {
   font-size: 40px;
   font-weight: 700;
 }
@@ -11127,53 +11122,26 @@ header .lc-container .lc-title-section .lc-title h1 {
   flex-wrap: wrap;
 }
 
-.main .about {
-  width: 100%;
+.main .lc-about {
   padding: 100px 0;
 }
 
-.main .about .content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.main .lc-about .lc-container .row .lc-foto {
+  padding: 0 2rem;
 }
 
-.main .about .content .foto {
-  width: 48%;
-  padding: 15px;
-  transition: all 250ms;
-}
-
-.main .about .content .foto img {
+.main .lc-about .lc-container .row .lc-foto img {
   border-radius: 10px;
   width: 100%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-@media all and (min-width: 900px) {
-  .main .about .content .foto:hover {
-    padding: 10px;
-  }
-
-  .main .about .content .foto:hover img {
-    box-shadow: 0 0 10px;
-  }
-}
-
-.main .about .content article {
-  width: 48%;
-  align-self: stretch;
-  text-align: justify;
+.main .lc-about .lc-container .row .lc-text-about {
   font-size: 24px;
   font-weight: 300;
-  padding: 10px;
-  position: relative;
 }
 
-.main .about .content article h2 {
+.main .lc-about .lc-container .row .lc-text-about h2 {
   width: 100%;
   text-align: right;
   font-size: 32px;
@@ -11181,11 +11149,11 @@ header .lc-container .lc-title-section .lc-title h1 {
   margin-bottom: 10px;
 }
 
-.main .about .content article .about-me {
+.main .lc-about .lc-container .row .lc-text-about .lc-about-me {
   text-align: justify;
 }
 
-.main .about .content article .about-me p {
+.main .lc-about .lc-container .row .lc-text-about .lc-about-me p {
   padding: 10px 0px;
 }
 
@@ -11396,13 +11364,13 @@ footer p {
 }
 
 @media screen and (max-width: 1199px) {
-  aside .lc-sidebar ul {
+  .lc-header aside .lc-sidebar ul {
     transform: translateX(-5px);
   }
 }
 
-@media screen and (max-width: 700px) {
-  header .container-xl .lc-title-section .lc-title h1 {
+@media screen and (max-width: 767px) {
+  .lc-header header .container-xl .lc-title-section .lc-title h1 {
     font-size: 30px;
   }
 
@@ -11410,31 +11378,27 @@ footer p {
     padding: 0px 20px;
   }
 
-  .main .about {
-    padding: 0px;
+  .main .lc-about {
+    padding: 50px 0;
   }
 
-  .main .about .content {
-    flex-direction: column;
+  .main .lc-about .lc-container .row {
+    padding: 0 0.5rem;
   }
 
-  .main .about .content .foto {
-    padding: 10px;
-    width: 100%;
+  .main .lc-about .lc-container .row .lc-foto {
+    padding: 0;
   }
 
-  .main .about .content article {
-    width: 100%;
+  .main .lc-about .lc-container .row .lc-text-about {
+    padding: 2rem 0;
   }
 
-  .main .about .content article h2 {
+  .main .lc-about .lc-container .row .lc-text-about h2 {
     text-align: left;
-    margin-bottom: 0px;
   }
 
-  .main .about .content article p {
-    position: -webkit-sticky;
-    position: sticky;
+  .main .lc-about .lc-container .row .lc-text-about .lc-about-me p {
     font-size: 30px;
     padding: 0px;
   }
@@ -11501,11 +11465,11 @@ footer p {
 }
 
 @media screen and (max-width: 500px) {
-  header .container-xl .lc-title-section .lc-title h1 {
+  .lc-header header .container-xl .lc-title-section .lc-title h1 {
     font-size: 20px;
   }
 
-  .main .about .content article p {
+  .main .lc-about .lc-container .row .lc-text-about .lc-about-me p {
     font-size: 20px;
   }
 
@@ -11536,11 +11500,11 @@ footer p {
 }
 
 @media screen and (max-width: 360px) {
-  header .container-xl .lc-title-section .lc-title h1 {
+  .lc-header header .container-xl .lc-title-section .lc-title h1 {
     font-size: 18px;
   }
 
-  .main .about .content article p {
+  .main .lc-about .lc-container .row .lc-text-about .lc-about-me p {
     font-size: 18px;
   }
 
