@@ -3,7 +3,7 @@
         <nav>
             <div class="container-fluid lc-container fixed-top" id="navbar">
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 lc-logo">
                         <ul class="nav">
                             <li class="nav-item py-1">
                                 <a class="nav-link" class="text-decoration-none" href="/">
@@ -60,7 +60,7 @@
         <section class="lc-about" id="about">
             <div class="container-xl lc-container">
                 <div class="row">
-                    <div class="col-sm-12 col-md-6 lc-foto">
+                    <div class="col-sm-12 col-md-6 lc-foto align-self-center">
                         <img src="{{ asset('/img/me.jpeg') }}"
                         alt="Eduardo Martinez | Web Developer | Desarrollador web">
                     </div>
@@ -75,22 +75,30 @@
                 </div>
             </div>
         </section>
-        <section class="skills">
-            <div class="content">
-                <h2>@lang('text.mySkills')</h2>
-                <ul>
-                    <li>PHP</li>
-                    <li>Laravel</li>
-                    <li>Javascript</li>
-                    <li>Python</li>
-                    <li>MySQL</li>
-                    <li>Git</li>
-                    <li>SASS</li>
-                    <li>Linux</li>
-                    <li>HTML & CSS</li>
-                </ul>
-                <div class="about-skills">
-                    <p>@lang('text.aboutSkills')</p>
+        <section class="lc-skills">
+            <div class="container-xl lc-container">
+                <div class="row">
+                    <div class="col-sm-12 lc-title-skills">
+                        <h2>@lang('text.mySkills')</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 lc-list-skills">
+                        <ul>
+                            <li>PHP</li>
+                            <li>Laravel</li>
+                            <li>Javascript</li>
+                            <li>Python</li>
+                            <li>MySQL</li>
+                            <li>Git</li>
+                            <li>SASS</li>
+                            <li>Linux</li>
+                            <li>HTML & CSS</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-6 lc-about-skills">
+                        <p>@lang('text.aboutSkills')</p>
+                    </div>
                 </div>
             </div>
         </section>

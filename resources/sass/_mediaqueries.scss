@@ -1,11 +1,27 @@
 @media screen and (max-width: 1199px) {
     .lc-header {
+        nav {
+            .lc-container {
+                .lc-logo {
+                    padding-left: 0;
+                }
+                .lc-menu {
+                    padding-right: 0;
+                }
+            }
+        }
         aside {
             .lc-sidebar {
                 ul {
                     transform: translateX(-5px);
                 }
             }
+        }
+    }
+    .main {
+        padding: 0px 20px;
+        .lc-about {
+            padding: 100px 0;
         }
     }
 }
@@ -48,21 +64,23 @@
                 }
             }
         }
-        .skills {
-            padding: 10px;
-            .content {
-                flex-direction: column;
-                h2 {
-                    margin-bottom: 0px;
+        .lc-skills {
+            padding: 50px 0;
+            .lc-container {
+                .row { 
+                    padding: 0 0.5rem;
                 }
-                ul {
-                    width: 100%;
+                .lc-title-skills {
+                    padding-left: 0;
+                    padding-bottom: 0.5rem;
+                    h2 {
+                        margin-bottom: 0px;
+                    }
                 }
-                .about-skills {
-                    width: 100%;
+                .lc-about-skills {
                     font-size: 30px;
-                    padding-top: 0px;
-                } 
+                    padding: 0;
+                }
             }
         }
         .portfolio {
@@ -96,7 +114,7 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 575px) {
     .lc-header {
         header {
             .container-xl {
@@ -124,13 +142,10 @@
                 }
             }
         }
-        .skills {
-            .content {
-                .about-skills {
+        .lc-skills {
+            .lc-container {
+                .lc-about-skills {
                     font-size: 20px;
-                } 
-                ul {
-                    padding: 10px;
                 }
             }
         }
@@ -188,11 +203,11 @@
                 }
             }
         }
-        .skills {
-            .content {
-                .about-skills {
+        .lc-skills {
+            .lc-container {
+                .lc-about-skills {
                     font-size: 18px;
-                } 
+                }
             }
         }
         .portfolio {

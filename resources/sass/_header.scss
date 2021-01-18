@@ -5,7 +5,11 @@
         animation: fadeInDown .75s ease-in-out;
         .lc-container {
             transition: background-color 0.4s ease-out;
+            .lc-logo {
+                padding-left: 9rem;
+            }
             .lc-menu {
+                padding-right: 9rem;
                 a {
                     color: #000;
                     font-weight: 300;
@@ -20,7 +24,7 @@
                         transition: all ease-in 250ms;
                         top: 25px;
                     }
-                    @media all and (min-width: 900px) {
+                    @media all and (min-width: 992px) {
                         &:hover::before {
                             width: 90%;
                         }
@@ -45,6 +49,7 @@
             position: fixed;
             top: 40%;
             z-index: 5;
+            animation: appear .75s ease-in-out;
             ul {
                 list-style-type: none;
                 padding: 0;
@@ -63,7 +68,7 @@
                         span {
                             opacity: 0;
                         }
-                        @media all and (min-width: 900px) {
+                        @media all and (min-width: 992px) {
                             &:hover span{
                                 opacity: 1;
                                 transition: all 1.5s;
