@@ -12,6 +12,10 @@ $(document).ready(function () {
         }
     });
 
+    $("#lc-btn-navbar").on('click', function(){
+        $("#lc-hamburguer").toggleClass('lc-hamburguer-active');
+    });
+
     var about = $('#about').offset().top,
         portfolio = $('#portfolio').offset().top,
         contact = $('#contact').offset().top;

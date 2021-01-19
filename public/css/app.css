@@ -11023,21 +11023,53 @@ body {
   transition: background-color 0.4s ease-out;
 }
 
-.lc-header nav .lc-container .lc-logo {
-  padding-left: 9rem;
+.lc-header nav .lc-container .lc-navbar-custom {
+  background-color: transparent;
 }
 
-.lc-header nav .lc-container .lc-menu {
-  padding-right: 9rem;
+.lc-header nav .lc-container .lc-navbar-custom .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0,0,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.lc-header nav .lc-container .lc-menu a {
+.lc-header nav .lc-container .lc-navbar-custom .lc-hamburguer {
+  display: inline-block;
+  position: relative;
+  height: 2px;
+  width: 34px;
+  border-radius: 1px;
+  background: #000;
+  vertical-align: middle;
+}
+
+.lc-header nav .lc-container .lc-navbar-custom .lc-hamburguer::before,
+.lc-header nav .lc-container .lc-navbar-custom .lc-hamburguer::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 2px;
+  border-radius: 1px;
+  background: #000;
+  transition: all 200ms;
+  width: 26px;
+}
+
+.lc-header nav .lc-container .lc-navbar-custom .lc-hamburguer::before {
+  top: -11px;
+  left: 3px;
+}
+
+.lc-header nav .lc-container .lc-navbar-custom .lc-hamburguer::after {
+  top: 11px;
+  left: 3px;
+}
+
+.lc-header nav .lc-container .lc-navbar-custom .lc-navbar-menu a {
   color: #000;
   font-weight: 300;
   font-size: 16px;
 }
 
-.lc-header nav .lc-container .lc-menu a::before {
+.lc-header nav .lc-container .lc-navbar-custom .lc-navbar-menu a::before {
   content: "";
   display: block;
   height: 1.5px;
@@ -11049,20 +11081,52 @@ body {
 }
 
 @media all and (min-width: 992px) {
-  .lc-header nav .lc-container .lc-menu a:hover::before {
+  .lc-header nav .lc-container .lc-navbar-custom .lc-navbar-menu a:hover::before {
     width: 90%;
   }
+}
+
+.lc-header nav .lc-hamburguer-active {
+  height: 0 !important;
+}
+
+.lc-header nav .lc-hamburguer-active::after,
+.lc-header nav .lc-hamburguer-active::before {
+  top: 0px !important;
+  left: 0 !important;
+  width: 34px !important;
+}
+
+.lc-header nav .lc-hamburguer-active::after {
+  transform: rotate(-45deg);
+}
+
+.lc-header nav .lc-hamburguer-active::before {
+  transform: rotate(45deg);
 }
 
 .lc-header nav .menuScroll {
   background-color: #000 !important;
 }
 
-.lc-header nav .menuScroll .lc-menu a {
+.lc-header nav .menuScroll .lc-navbar-custom .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.lc-header nav .menuScroll .lc-navbar-custom .lc-hamburguer {
+  background: #fff;
+}
+
+.lc-header nav .menuScroll .lc-navbar-custom .lc-hamburguer::before,
+.lc-header nav .menuScroll .lc-navbar-custom .lc-hamburguer::after {
+  background: #fff;
+}
+
+.lc-header nav .menuScroll .lc-navbar-custom .lc-navbar-menu a {
   color: #fff;
 }
 
-.lc-header nav .menuScroll .lc-menu a::before {
+.lc-header nav .menuScroll .lc-navbar-custom .lc-navbar-menu a::before {
   background-color: #fff;
 }
 
@@ -11372,14 +11436,6 @@ body {
 }
 
 @media screen and (max-width: 1199px) {
-  .lc-header nav .lc-container .lc-logo {
-    padding-left: 0;
-  }
-
-  .lc-header nav .lc-container .lc-menu {
-    padding-right: 0;
-  }
-
   .lc-header aside .lc-sidebar ul {
     transform: translateX(-5px);
   }
@@ -11394,7 +11450,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .lc-header header .container-xl .lc-title-section .lc-title h1 {
+  .lc-header header .lc-container .lc-title-section .lc-title h1 {
     font-size: 30px;
   }
 
@@ -11481,7 +11537,7 @@ body {
 }
 
 @media screen and (max-width: 575px) {
-  .lc-header header .container-xl .lc-title-section .lc-title h1 {
+  .lc-header header .lc-container .lc-title-section .lc-title h1 {
     font-size: 20px;
   }
 
@@ -11529,7 +11585,7 @@ body {
 }
 
 @media screen and (max-width: 360px) {
-  .lc-header header .container-xl .lc-title-section .lc-title h1 {
+  .lc-header header .lc-container .lc-title-section .lc-title h1 {
     font-size: 18px;
   }
 

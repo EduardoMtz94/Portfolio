@@ -3,28 +3,30 @@
         <nav>
             <div class="container-fluid lc-container fixed-top" id="navbar">
                 <div class="row">
-                    <div class="col-sm-4 lc-logo">
-                        <ul class="nav">
-                            <li class="nav-item py-1">
-                                <a class="nav-link" class="text-decoration-none" href="/">
-                                    <img src="{{ asset('img/lalo-codes-black.png') }}" alt="Lalo codes logo" width="100" id="img-logo">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-8 lc-menu">
-                        <ul class="nav justify-content-end">
-                            <li class="nav-item py-3">
-                                <a class="nav-link" class="text-decoration-none" href="#about" id="btn-about">@lang('text.aboutMe')</a>
-                            </li>
-                            <li class="nav-item py-3">
-                                <a class="nav-link" class="text-decoration-none" href="#portfolio" id="btn-portfolio">@lang('text.portfolio')</a>
-                            </li>
-                            <li class="nav-item py-3">
-                                <a class="nav-link" class="text-decoration-none" href="#contact" id="btn-contact">@lang('text.contactMe')</a>
-                            </li>
-                        </ul>
-                    </div>
+                    <nav class="navbar navbar-expand-lg lc-navbar-custom">
+                        <div class="container">
+                            <a href="/" class="navbar-brand">
+                                <img src="{{ asset('img/lalo-codes-black.png') }}" alt="Lalo codes logo" width="100" id="img-logo">
+                            </a>
+                            <button class="navbar-toggler float-right" id="lc-btn-navbar" type="button" data-toggle="collapse" data-target="#lc-navbar">
+                                <!--<span class="navbar-toggler-icon"></span>-->
+                                <span class="lc-hamburguer" id="lc-hamburguer"></span>
+                            </button>
+                            <div class="navbar-collapse collapse lc-navbar-menu" id="lc-navbar">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" class="text-decoration-none" href="#about" id="btn-about">@lang('text.aboutMe')</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" class="text-decoration-none" href="#portfolio" id="btn-portfolio">@lang('text.portfolio')</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" class="text-decoration-none" href="#contact" id="btn-contact">@lang('text.contactMe')</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </nav>

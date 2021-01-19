@@ -5,40 +5,94 @@
         animation: fadeInDown .75s ease-in-out;
         .lc-container {
             transition: background-color 0.4s ease-out;
-            .lc-logo {
-                padding-left: 9rem;
-            }
-            .lc-menu {
-                padding-right: 9rem;
-                a {
-                    color: #000;
-                    font-weight: 300;
-                    font-size: 16px;
-                    &::before {
+            .lc-navbar-custom {
+                background-color: transparent;
+                .navbar-toggler-icon {
+                    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0,0,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+                }
+                .lc-hamburguer {
+                    display: inline-block;
+                    position: relative;
+                    height: 2px;
+                    width: 34px;
+                    border-radius: 1px;
+                    background: #000;
+                    vertical-align: middle;
+                    &::before, &::after {
                         content: "";
-                        display: block;
-                        height: 1.5px;
-                        width: 0%;
-                        background-color: #000;
-                        position: relative;
-                        transition: all ease-in 250ms;
-                        top: 25px;
+                        display: inline-block;
+                        position: absolute;
+                        height: 2px;
+                        border-radius: 1px;
+                        background: #000;
+                        transition: all 200ms;
+                        width: 26px;
                     }
-                    @media all and (min-width: 992px) {
-                        &:hover::before {
-                            width: 90%;
+                    &::before {
+                        top: -11px;
+                        left: 3px;
+                    }
+                    &::after {
+                        top: 11px;
+                        left: 3px;
+                    }
+                }
+                .lc-navbar-menu {
+                    a {
+                        color: #000;
+                        font-weight: 300;
+                        font-size: 16px;
+                        &::before {
+                            content: "";
+                            display: block;
+                            height: 1.5px;
+                            width: 0%;
+                            background-color: #000;
+                            position: relative;
+                            transition: all ease-in 250ms;
+                            top: 25px;
+                        }
+                        @media all and (min-width: 992px) {
+                            &:hover::before {
+                                width: 90%;
+                            }
                         }
                     }
                 }
             }
         }
+        .lc-hamburguer-active {
+            height: 0 !important;
+            &::after, &::before {
+                top: 0px !important;
+                left: 0 !important;
+                width: 34px !important;
+            }
+            &::after {
+                transform: rotate(-45deg);
+            }
+            &::before {
+                transform: rotate(45deg);
+            }
+        }
         .menuScroll {
             background-color: #000 !important;
-            .lc-menu {
-                a {
-                    color: #fff;
-                    &::before {
-                        background-color: #fff;
+            .lc-navbar-custom {
+                .navbar-toggler-icon {
+                    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+                }
+                .lc-hamburguer {
+                    background: #fff;
+                    &::before, &::after {
+                        background: #fff;
+                    }
+                }
+                .lc-navbar-menu {
+                    a {
+                        color: #fff;
+                        &::before {
+                            background-color: #fff;
+                        }
                     }
                 }
             }

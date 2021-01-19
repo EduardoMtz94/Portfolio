@@ -1,15 +1,5 @@
 @media screen and (max-width: 1199px) {
     .lc-header {
-        nav {
-            .lc-container {
-                .lc-logo {
-                    padding-left: 0;
-                }
-                .lc-menu {
-                    padding-right: 0;
-                }
-            }
-        }
         aside {
             .lc-sidebar {
                 ul {
@@ -28,7 +18,7 @@
 @media screen and (max-width: 767px) {
     .lc-header {
         header {
-            .container-xl {
+            .lc-container {
                 .lc-title-section {
                     .lc-title {
                         h1 {
@@ -114,7 +104,7 @@
 @media screen and (max-width: 575px) {
     .lc-header {
         header {
-            .container-xl {
+            .lc-container {
                 .lc-title-section {
                     .lc-title {
                         h1 {
@@ -190,7 +180,7 @@
 @media screen and (max-width: 360px) {
     .lc-header {
         header {
-            .container-xl {
+            .lc-container {
                 .lc-title-section {
                     .lc-title {
                         h1 {
