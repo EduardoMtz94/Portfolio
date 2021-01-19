@@ -90,27 +90,22 @@
                     padding-left: 0.5rem;
                     padding-bottom: 0.5rem;
                 }
-                .lc-portfolio-project {
-                    padding-bottom: 3rem;
-                    a {
-                        font-weight: bold;
+                .lc-portfolio-content {
+                    padding-left: 0.5rem;
+                    .lc-portfolio-project {
+                        padding-bottom: 3rem;
+                        a {
+                            font-weight: bold;
+                        }
                     }
                 }
             }
         }
-        .contact {
-            padding: 10px;
-            .content {
-                flex-direction: column;
-                h2 {
-                    margin-bottom: 20px;
-                }
-                p {
-                    width: 100%;
-                }
-                .contact-mail, .contact-media {
-                    width: 100%;
-                }
+        .lc-contact {
+            padding: 50px 0;
+            .lc-contact-title {
+                padding-left: 0.5rem;
+                padding-bottom: 0.5rem;
             }
         }
     }
@@ -175,6 +170,20 @@
                 }
             }
         }
+        .lc-contact {
+            padding: 50px 0;
+            .lc-contact-title {
+                p {
+                    font-size: 20px;
+                }
+            }
+            .lc-contact-mail {
+                a {
+                    text-decoration: underline;
+                    font-size: 20px;
+                }
+            }
+        }
     }
 }
 
@@ -223,17 +232,15 @@
                 }
             }
         }
-        .contact {
-            .content {
+        .lc-contact {
+            .lc-contact-title {
                 p {
                     font-size: 18px;
                 }
-                .contact-mail {
-                    padding: 0;
-                    a {
-                        text-decoration: underline;
-                        font-size: 18px;
-                    }
+            }
+            .lc-contact-mail {
+                a {
+                    font-size: 18px;
                 }
             }
         }

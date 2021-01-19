@@ -110,7 +110,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12 col-md-4">
+                    <div class="col-sm-12 col-md-4 lc-portfolio-content">
                         <div class="lc-portfolio-project">
                             <div class="lc-portfolio-foto">
                                 <img src="/img/tweety.jpeg" alt="Tweety" width="300">
@@ -122,7 +122,7 @@
                             </article>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4">
+                    <div class="col-sm-12 col-md-4 lc-portfolio-content">
                         <div class="lc-portfolio-project">
                             <div class="lc-portfolio-foto">
                                 <img src="/img/restaurant.png" alt="Restaurant" width="300">
@@ -134,7 +134,7 @@
                             </article>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4">
+                    <div class="col-sm-12 col-md-4 lc-portfolio-content">
                         <div class="lc-portfolio-project">
                             <div class="lc-portfolio-foto">
                                 <img src="/img/startup.png" alt="Startup" width="300">
@@ -149,22 +149,28 @@
                 </div>
             </div>
         </section>
-        <section class="contact" id="contact">
-            <div class="content">
-                <h2>@lang('text.contactMe')</h2>
-                <p>
-                    @lang('text.contactText')
-                </p>
-                <div class="contact-mail">
-                    <a href="mailto:eduardomartinezsan94@gmail.com">
-                        eduardomartinezsan94@gmail.com
-                    </a>
+        <section class="lc-contact" id="contact">
+            <div class="container-xl lc-container">
+                <div class="row">
+                    <div class="col-12 lc-contact-title">
+                        <h2>@lang('text.contactMe')</h2>
+                        <p>
+                            @lang('text.contactText')
+                        </p>
+                    </div>
                 </div>
-                <div class="contact-media">
-                    <a href="https://twitter.com/messages/compose?recipient_id=1850631468&text=Hola%20Eduardo"
-                    class="twitter-dm-button" data-screen-name="@AlemanEMS" data-size="large">
-                        Message @AlemanEMS
-                    </a>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 lc-contact-mail">
+                        <a href="mailto:eduardomartinezsan94@gmail.com">
+                            eduardomartinezsan94@gmail.com
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 lc-contact-media">
+                        <a href="https://twitter.com/messages/compose?recipient_id=1850631468&text=Hola%20Eduardo"
+                        class="twitter-dm-button" data-screen-name="@AlemanEMS" data-size="large">
+                            Message @AlemanEMS
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

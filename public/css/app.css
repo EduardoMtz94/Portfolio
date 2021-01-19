@@ -11301,41 +11301,37 @@ body {
   }
 }
 
-.main .contact {
-  width: 100%;
+.main .lc-contact {
   padding: 100px 0;
 }
 
-.main .contact .content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.main .lc-contact .lc-contact-title {
+  padding-bottom: 2.5rem;
+  padding-left: 2rem;
 }
 
-.main .contact .content h2 {
+.main .lc-contact .lc-contact-title h2 {
   width: 100%;
   text-align: left;
   font-size: 32px;
   font-weight: 400;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
-.main .contact .content p {
+.main .lc-contact .lc-contact-title p {
   text-align: justify;
   width: 100%;
   font-size: 22px;
   font-weight: 300;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
-.main .contact .content .contact-mail {
-  width: 50%;
+.main .lc-contact .lc-contact-mail {
   text-align: center;
   padding: 25px;
 }
 
-.main .contact .content .contact-mail a {
+.main .lc-contact .lc-contact-mail a {
   color: #000;
   font-size: 22px;
   font-weight: 300;
@@ -11343,7 +11339,7 @@ body {
   display: inline-block;
 }
 
-.main .contact .content .contact-mail a::before {
+.main .lc-contact .lc-contact-mail a::before {
   content: "";
   display: block;
   height: 2.5px;
@@ -11355,13 +11351,12 @@ body {
 }
 
 @media all and (min-width: 992px) {
-  .main .contact .content .contact-mail a:hover::before {
+  .main .lc-contact .lc-contact-mail a:hover::before {
     width: 90%;
   }
 }
 
-.main .contact .content .contact-media {
-  width: 50%;
+.main .lc-contact .lc-contact-media {
   text-align: center;
   padding: 25px;
 }
@@ -11464,33 +11459,25 @@ footer p {
     padding-bottom: 0.5rem;
   }
 
-  .main .lc-portfolio .lc-container .lc-portfolio-project {
+  .main .lc-portfolio .lc-container .lc-portfolio-content {
+    padding-left: 0.5rem;
+  }
+
+  .main .lc-portfolio .lc-container .lc-portfolio-content .lc-portfolio-project {
     padding-bottom: 3rem;
   }
 
-  .main .lc-portfolio .lc-container .lc-portfolio-project a {
+  .main .lc-portfolio .lc-container .lc-portfolio-content .lc-portfolio-project a {
     font-weight: bold;
   }
 
-  .main .contact {
-    padding: 10px;
+  .main .lc-contact {
+    padding: 50px 0;
   }
 
-  .main .contact .content {
-    flex-direction: column;
-  }
-
-  .main .contact .content h2 {
-    margin-bottom: 20px;
-  }
-
-  .main .contact .content p {
-    width: 100%;
-  }
-
-  .main .contact .content .contact-mail,
-  .main .contact .content .contact-media {
-    width: 100%;
+  .main .lc-contact .lc-contact-title {
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }
 
@@ -11527,6 +11514,19 @@ footer p {
     text-decoration: underline;
     font-size: 20px;
   }
+
+  .main .lc-contact {
+    padding: 50px 0;
+  }
+
+  .main .lc-contact .lc-contact-title p {
+    font-size: 20px;
+  }
+
+  .main .lc-contact .lc-contact-mail a {
+    text-decoration: underline;
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 360px) {
@@ -11550,16 +11550,11 @@ footer p {
     font-size: 18px;
   }
 
-  .main .contact .content p {
+  .main .lc-contact .lc-contact-title p {
     font-size: 18px;
   }
 
-  .main .contact .content .contact-mail {
-    padding: 0;
-  }
-
-  .main .contact .content .contact-mail a {
-    text-decoration: underline;
+  .main .lc-contact .lc-contact-mail a {
     font-size: 18px;
   }
 }

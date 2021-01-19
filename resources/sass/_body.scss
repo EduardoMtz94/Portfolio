@@ -143,60 +143,55 @@
             }
         }
     }
-    .contact {
-        width: 100%;
+    .lc-contact {
         padding: 100px 0;
-        .content {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
+        .lc-contact-title {
+            padding-bottom: 2.5rem;
+            padding-left: 2rem;
             h2 {
                 width: 100%;
                 text-align: left;
                 font-size: 32px;
                 font-weight: 400;
-                margin-bottom: 50px;
+                margin-bottom: 10px;
             }
             p {
                 text-align: justify;
                 width: 100%;
                 font-size: 22px;
                 font-weight: 300;
-                margin-bottom: 50px;
+                margin-bottom: 10px;
             }
-            .contact-mail {
-                width: 50%;
-                text-align: center;
-                padding: 25px;
-                a {
-                    color: #000;
-                    font-size: 22px;
-                    font-weight: 300;
-                    text-decoration: none;
-                    display: inline-block;
-                    &::before {
-                        content: "";
-                        display: block;
-                        height: 2.5px;
-                        width: 0%;
-                        background-color: #000;
-                        position: relative;
-                        transition: all ease-in 250ms;
-                        top: 30px;
-                    }
-                    @media all and (min-width: 992px) {
-                        &:hover::before {
-                            width: 90%;
-                        }
+        }
+        .lc-contact-mail {
+            text-align: center;
+            padding: 25px;
+            a {
+                color: #000;
+                font-size: 22px;
+                font-weight: 300;
+                text-decoration: none;
+                display: inline-block;
+                &::before {
+                    content: "";
+                    display: block;
+                    height: 2.5px;
+                    width: 0%;
+                    background-color: #000;
+                    position: relative;
+                    transition: all ease-in 250ms;
+                    top: 30px;
+                }
+                @media all and (min-width: 992px) {
+                    &:hover::before {
+                        width: 90%;
                     }
                 }
             }
-            .contact-media {
-                width: 50%;
-                text-align: center;
-                padding: 25px;
-            }
+        }
+        .lc-contact-media {
+            text-align: center;
+            padding: 25px;
         }
     }
 }
