@@ -11361,12 +11361,11 @@ body {
   padding: 25px;
 }
 
-footer {
-  width: 100%;
+.lc-footer footer {
   margin: 10px 0;
 }
 
-footer p {
+.lc-footer footer p {
   text-align: center;
   font-size: 16px;
   font-weight: 300;

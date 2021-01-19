@@ -175,7 +175,15 @@
             </div>
         </section>
     </section>
-    <footer>
-        <p>Copyright © 2021, Eduardo Mart&iacute;nez</p> 
-    </footer>
+    <section class="lc-footer">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-12">
+                    <footer>
+                        <p>Copyright © 2021, Eduardo Mart&iacute;nez</p> 
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
 </x-master>
