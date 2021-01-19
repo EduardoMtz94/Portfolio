@@ -3,119 +3,92 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    .about {
-        width: 100%;
+    .lc-about {
         padding: 100px 0;
-        .content {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            .foto {
-                width: 48%;
-                padding: 15px;
-                transition: all 250ms;
-                img {
-                    border-radius: 10px;
-                    width: 100%;
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-                @media all and (min-width: 900px) {
-                    &:hover {
-                        padding: 10px;
+        .lc-container {
+            .row {
+                .lc-foto {
+                    padding: 0 2rem;
+                    img {
+                        border-radius: 10px;
+                        width: 100%;
+                        display: block;
                     }
-                    &:hover img{
-                        box-shadow: 0 0 10px;
+                }
+                .lc-text-about {
+                    font-size: 24px;
+                    font-weight: 300;
+                    h2 {
+                        width: 100%;
+                        text-align: right;
+                        font-size: 32px;
+                        font-weight: 400;
+                        margin-bottom: 10px;
+                    }
+                    .lc-about-me {
+                        text-align: justify;
+                        p {
+                            padding: 10px 0px;
+                        }
                     }
                 }
             }
-            article {
-                width: 48%;
-                align-self: stretch;
-                text-align: justify;
-                font-size: 24px;
-                font-weight: 300;
-                padding: 10px;
-                position: relative;
+        }
+    }
+    .lc-skills {
+        padding: 100px 0;
+        .lc-container {
+            .lc-title-skills {
+                padding-bottom: 2.5rem;
                 h2 {
                     width: 100%;
-                    text-align: right;
+                    text-align: left;
                     font-size: 32px;
                     font-weight: 400;
                     margin-bottom: 10px;
                 }
-                .about-me {
-                    text-align: justify;
-                    p {
-                        padding: 10px 0px;
+            }
+            .lc-list-skills {
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    list-style-type: circle;
+                    position: relative;
+                    left: 2.5%;
+                    li {
+                        width: 30%;
+                        font-size: 18px;
+                        font-weight: 300;
+                        text-align: left;
+                        margin: 25px auto;
                     }
                 }
             }
-        }
-    }
-    .skills {
-        width: 100%;
-        padding: 100px 0;
-        .content {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            h2 {
-                width: 100%;
-                text-align: left;
-                font-size: 32px;
-                font-weight: 400;
-                margin-bottom: 50px;
-            }
-            .about-skills {
+            .lc-about-skills {
+                padding: 1.25rem;
                 text-align: justify;
-                width: 48%;
                 font-size: 24px;
                 font-weight: 300;
-                margin-bottom: 50px;
-                padding-top: 22px;
-            }
-            ul {
-                width: 48%;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: flex-start;
-                list-style-type: circle;
-                position: relative;
-                left: 2.5%;
-                li {
-                    width: 30%;
-                    font-size: 18px;
-                    font-weight: 300;
-                    text-align: left;
-                    margin: 25px auto;
-                }
             }
         }
     }
-    .portfolio {
-        width: 100%;
+    .lc-portfolio {
         padding: 100px 0;
-        .content {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            h2 {
-                width: 100%;
-                text-align: left;
-                font-size: 32px;
-                font-weight: 400;
-                margin-bottom: 50px;
+        .lc-container {
+            .lc-portfolio-title {
+                padding-bottom: 2.5rem;
+                h2 {
+                    width: 100%;
+                    text-align: left;
+                    font-size: 32px;
+                    font-weight: 400;
+                    margin-bottom: 10px;
+                }
             }
-            .project {
-                width: 30%;
-                cursor: pointer;
-                .foto {
+            .lc-portfolio-project {
+                .lc-portfolio-foto {
                     padding: 10px;
                     transition: all 250ms;
                     margin-bottom: 10px;
@@ -149,12 +122,12 @@
                         background-color: #000;
                         position: relative;
                         transition: all ease-in 250ms;
-                        top: 25px;
+                        top: 30px;
                     }
                 }
-                @media all and (min-width: 900px) {
+                @media all and (min-width: 992px) {
                     &:hover {
-                        .foto {
+                        .lc-portfolio-foto {
                             padding: 5px;
                             img{
                                 box-shadow: 0 0 5px;
@@ -170,60 +143,55 @@
             }
         }
     }
-    .contact {
-        width: 100%;
+    .lc-contact {
         padding: 100px 0;
-        .content {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
+        .lc-contact-title {
+            padding-bottom: 2.5rem;
+            padding-left: 2rem;
             h2 {
                 width: 100%;
                 text-align: left;
                 font-size: 32px;
                 font-weight: 400;
-                margin-bottom: 50px;
+                margin-bottom: 10px;
             }
             p {
                 text-align: justify;
                 width: 100%;
                 font-size: 22px;
                 font-weight: 300;
-                margin-bottom: 50px;
+                margin-bottom: 10px;
             }
-            .contact-mail {
-                width: 50%;
-                text-align: center;
-                padding: 25px;
-                a {
-                    color: #000;
-                    font-size: 22px;
-                    font-weight: 300;
-                    text-decoration: none;
-                    display: inline-block;
-                    &::before {
-                        content: "";
-                        display: block;
-                        height: 2.5px;
-                        width: 0%;
-                        background-color: #000;
-                        position: relative;
-                        transition: all ease-in 250ms;
-                        top: 30px;
-                    }
-                    @media all and (min-width: 900px) {
-                        &:hover::before {
-                            width: 90%;
-                        }
+        }
+        .lc-contact-mail {
+            text-align: center;
+            padding: 25px;
+            a {
+                color: #000;
+                font-size: 22px;
+                font-weight: 300;
+                text-decoration: none;
+                display: inline-block;
+                &::before {
+                    content: "";
+                    display: block;
+                    height: 2.5px;
+                    width: 0%;
+                    background-color: #000;
+                    position: relative;
+                    transition: all ease-in 250ms;
+                    top: 30px;
+                }
+                @media all and (min-width: 992px) {
+                    &:hover::before {
+                        width: 90%;
                     }
                 }
             }
-            .contact-media {
-                width: 50%;
-                text-align: center;
-                padding: 25px;
-            }
+        }
+        .lc-contact-media {
+            text-align: center;
+            padding: 25px;
         }
     }
 }

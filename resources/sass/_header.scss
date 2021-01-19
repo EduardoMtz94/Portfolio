@@ -1,72 +1,111 @@
-header {
-    width: 100%;
-    .menu {
-        width: 100vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        flex-wrap: wrap;
-        position: fixed;
-        z-index: 20;
-        transition: background-color 0.4s ease-out;
-        padding: 0px 155px;
-        a {
-            text-decoration: none;
-            display: inline-block;
-            color: #000;
-            padding: 25px 20px;
-            font-weight: 300;
-            font-size: 16px;
-            &::before {
-                content: "";
-                display: block;
-                height: 1.5px;
-                width: 0%;
-                background-color: #000;
-                position: relative;
-                transition: all ease-in 250ms;
-                top: 25px;
-            }
-            @media all and (min-width: 900px) {
-                &:hover::before {
-                    width: 90%;
+.lc-header {
+    nav {
+        width: 100%;
+        backface-visibility: hidden;
+        animation: fadeInDown .75s ease-in-out;
+        .lc-container {
+            transition: background-color 0.4s ease-out;
+            .lc-navbar-custom {
+                background-color: transparent;
+                button, button:active {
+                    outline: none !important;
+                    box-shadow: none;
+                }
+                .lc-hamburguer {
+                    display: inline-block;
+                    position: relative;
+                    height: 2px;
+                    width: 34px;
+                    border-radius: 1px;
+                    background: #000;
+                    vertical-align: middle;
+                    &::before, &::after {
+                        content: "";
+                        display: inline-block;
+                        position: absolute;
+                        height: 2px;
+                        border-radius: 1px;
+                        background: #000;
+                        transition: all 200ms;
+                        width: 26px;
+                    }
+                    &::before {
+                        top: -11px;
+                        left: 3px;
+                    }
+                    &::after {
+                        top: 11px;
+                        left: 3px;
+                    }
+                }
+                .lc-navbar-menu {
+                    a {
+                        color: #000;
+                        font-weight: 300;
+                        font-size: 16px;
+                        &::before {
+                            content: "";
+                            display: block;
+                            height: 1.5px;
+                            width: 0%;
+                            background-color: #000;
+                            position: relative;
+                            transition: all ease-in 250ms;
+                            top: 25px;
+                        }
+                        @media all and (min-width: 992px) {
+                            &:hover::before {
+                                width: 90%;
+                            }
+                        }
+                    }
                 }
             }
         }
-        backface-visibility: hidden;
-        animation: fadeInDown .75s ease-in-out;
-    }
-    .menuScroll {
-      background-color: #000;
-      a {
-        color: #fff;
-        &::before {
-            background-color: #fff;
-        }
-      }
-    }
-    .content {
-        height: 100vh;
-        min-height: 700px;
-        .title {
-            width: 100%;
-            padding: 300px 0;
-            text-align: right;
-            h1 {
-                font-size: 40px;
-                font-weight: 700;
+        .lc-hamburguer-active {
+            height: 0 !important;
+            &::after, &::before {
+                top: 0px !important;
+                left: 0 !important;
+                width: 34px !important;
             }
-            backface-visibility: hidden;
-            animation: fadeInRight .75s ease-in-out;
+            &::after {
+                transform: rotate(-45deg);
+            }
+            &::before {
+                transform: rotate(45deg);
+            }
         }
-        .sidebar {
+        .menuScroll {
+            background-color: #000 !important;
+            .lc-navbar-custom {
+                .lc-hamburguer {
+                    background: #fff;
+                    &::before, &::after {
+                        background: #fff;
+                    }
+                }
+                .lc-navbar-menu {
+                    a {
+                        color: #fff;
+                        &::before {
+                            background-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    aside {
+        .lc-sidebar {
             position: fixed;
             top: 40%;
-            z-index: 0;
+            z-index: 5;
+            animation: appear .75s ease-in-out;
             ul {
                 list-style-type: none;
                 padding: 0;
-                transform: translateX(-130px);
+                transform: translateX(50px);
                 li {
                     display: block;
                     background-color: transparent;
@@ -74,14 +113,14 @@ header {
                     padding: 10px;
                     transition: all 1s;
                     font-weight: 300;
-                    width: 200px;
+                    width: 125px;
                     a {
                         text-decoration: none;
                         color: #000;
                         span {
                             opacity: 0;
                         }
-                        @media all and (min-width: 900px) {
+                        @media all and (min-width: 992px) {
                             &:hover span{
                                 opacity: 1;
                                 transition: all 1.5s;
@@ -107,6 +146,24 @@ header {
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+    header {
+        .lc-container {
+            height: 100vh;
+            .lc-title-section {
+                .lc-title {
+                    width: 100%;
+                    padding: 300px 0;
+                    text-align: right;
+                    h1 {
+                        font-size: 40px;
+                        font-weight: 700;
+                    }
+                    backface-visibility: hidden;
+                    animation: fadeInRight .75s ease-in-out;
                 }
             }
         }

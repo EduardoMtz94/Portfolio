@@ -1,17 +1,7 @@
-@media screen and (max-width: 700px) {
-    header {
-        .menu {
-            width: 100vw;
-            padding: 0;
-        }
-        .content {
-            .title {
-                padding: 300px 20px;
-                h1 {
-                    font-size: 30px;
-                }
-            }
-            .sidebar {
+@media screen and (max-width: 1199px) {
+    .lc-header {
+        aside {
+            .lc-sidebar {
                 ul {
                     transform: translateX(-5px);
                 }
@@ -20,109 +10,140 @@
     }
     .main {
         padding: 0px 20px;
-        .about {
-            padding: 0px;
-            .content {
-                flex-direction: column;
-                .foto {
-                    padding: 10px;
-                    width: 100%;
-                }
-                article {
-                    width: 100%;
-                    h2 {
-                        text-align: left;
-                        margin-bottom: 0px;
-                    }
-                    p {
-                        position: sticky;
-                        font-size: 30px;
-                        padding: 0px;
-                    }
-                }
-            }
-        }
-        .skills {
-            padding: 10px;
-            .content {
-                flex-direction: column;
-                h2 {
-                    margin-bottom: 0px;
-                }
-                ul {
-                    width: 100%;
-                }
-                .about-skills {
-                    width: 100%;
-                    font-size: 30px;
-                    padding-top: 0px;
-                } 
-            }
-        }
-        .portfolio {
-            padding: 10px;
-            .content {
-                flex-direction: column;
-                .project {
-                    width: 100%;
-                    margin-bottom: 45px;
-                    a {
-                        font-weight: bold;
-                    }
-                }
-            }
-        }
-        .contact {
-            padding: 10px;
-            .content {
-                flex-direction: column;
-                h2 {
-                    margin-bottom: 20px;
-                }
-                p {
-                    width: 100%;
-                }
-                .contact-mail, .contact-media {
-                    width: 100%;
-                }
-            }
+        .lc-about {
+            padding: 100px 0;
         }
     }
 }
-
-@media screen and (max-width: 500px) {
-    header {
-        .content {
-            .title {
-                h1 {
-                    font-size: 20px;
+@media screen and (max-width: 767px) {
+    .lc-header {
+        nav {
+            ul {
+                text-align: center;
+            }
+        }
+        header {
+            .lc-container {
+                .lc-title-section {
+                    .lc-title {
+                        h1 {
+                            font-size: 30px;
+                        }
+                    }
                 }
             }
         }
     }
     .main {
-        .about {
-            .content {
-                article {
-                    p {
-                        font-size: 20px;
+        padding: 0px 20px;
+        .lc-about {
+            padding-top: 75px;
+            .lc-container {
+                .row { 
+                    padding: 0 0.5rem;
+                    .lc-foto {
+                        padding: 0;
+                    }
+                    .lc-text-about {
+                        padding: 2rem 0;
+                        h2 {
+                            text-align: left;
+                        }
+                        .lc-about-me {
+                            p {
+                                font-size: 30px;
+                                padding: 0px;
+                            }
+                        }
                     }
                 }
             }
         }
-        .skills {
-            .content {
-                .about-skills {
-                    font-size: 20px;
-                } 
-                ul {
-                    padding: 10px;
+        .lc-skills {
+            padding: 25px 0;
+            .lc-container {
+                .row { 
+                    padding: 0 0.5rem;
+                }
+                .lc-title-skills {
+                    padding-left: 0;
+                    padding-bottom: 0.5rem;
+                    h2 {
+                        margin-bottom: 0px;
+                    }
+                }
+                .lc-about-skills {
+                    font-size: 30px;
+                    padding: 0;
                 }
             }
         }
-        .portfolio {
-            .content {
-                .project {
+        .lc-portfolio {
+            padding-top: 75px;
+            .lc-container {
+                .lc-portfolio-title {
+                    padding-left: 0.5rem;
+                    padding-bottom: 0.5rem;
+                }
+                .lc-portfolio-content {
+                    padding-left: 0.5rem;
+                    .lc-portfolio-project {
+                        padding-bottom: 3rem;
+                        a {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+        .lc-contact {
+            padding-top: 75px;
+            .lc-contact-title {
+                padding-left: 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .lc-header {
+        header {
+            .lc-container {
+                .lc-title-section {
+                    .lc-title {
+                        h1 {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main {
+        .lc-about {
+            .lc-container {
+                .row { 
+                    .lc-text-about {
+                        .lc-about-me {
+                            p {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .lc-skills {
+            .lc-container {
+                .lc-about-skills {
+                    font-size: 20px;
+                }
+            }
+        }
+        .lc-portfolio {
+            .lc-container {
+                .lc-portfolio-project {
                     p {
                         font-size: 20px;
                     }
@@ -143,56 +164,75 @@
                 }
             }
         }
+        .lc-contact {
+            .lc-contact-title {
+                p {
+                    font-size: 20px;
+                }
+            }
+            .lc-contact-mail {
+                a {
+                    text-decoration: underline;
+                    font-size: 20px;
+                }
+            }
+        }
     }
 }
 
 @media screen and (max-width: 360px) {
-    header {
-        .content {
-            .title {
-                h1 {
-                    font-size: 18px;
+    .lc-header {
+        header {
+            .lc-container {
+                .lc-title-section {
+                    .lc-title {
+                        h1 {
+                            font-size: 18px;
+                        }
+                    }
                 }
             }
         }
     }
     .main {
-        .about {
-            .content {
-                article {
-                    p {
-                        font-size: 18px;
+        .lc-about {
+            .lc-container {
+                .row { 
+                    .lc-text-about {
+                        .lc-about-me {
+                            p {
+                                font-size: 18px;
+                            }
+                        }
                     }
                 }
             }
         }
-        .skills {
-            .content {
-                .about-skills {
+        .lc-skills {
+            .lc-container {
+                .lc-about-skills {
                     font-size: 18px;
-                } 
+                }
             }
         }
-        .portfolio {
-            .content {
-                .project {
+        .lc-portfolio {
+            .lc-container {
+                .lc-portfolio-project {
                     p {
                         font-size: 18px;
                     }
                 }
             }
         }
-        .contact {
-            .content {
+        .lc-contact {
+            .lc-contact-title {
                 p {
                     font-size: 18px;
                 }
-                .contact-mail {
-                    padding: 0;
-                    a {
-                        text-decoration: underline;
-                        font-size: 18px;
-                    }
+            }
+            .lc-contact-mail {
+                a {
+                    font-size: 18px;
                 }
             }
         }
