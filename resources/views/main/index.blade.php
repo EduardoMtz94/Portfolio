@@ -126,7 +126,7 @@
                     <div class="col-sm-12 col-md-4 lc-portfolio-content">
                         <div class="lc-portfolio-project">
                             <div class="lc-portfolio-foto">
-                                <img src="/img/restaurant.png" alt="Restaurant" width="300">
+                                <img src="/img/restaurant.jpg" alt="Restaurant" width="300">
                             </div>
                             <article>
                                 <h3>Restaurante</h3>
@@ -138,7 +138,7 @@
                     <div class="col-sm-12 col-md-4 lc-portfolio-content">
                         <div class="lc-portfolio-project">
                             <div class="lc-portfolio-foto">
-                                <img src="/img/startup.png" alt="Startup" width="300">
+                                <img src="/img/startup.jpg" alt="Startup" width="300">
                             </div>
                             <article>
                                 <h3>Startup</h3>
