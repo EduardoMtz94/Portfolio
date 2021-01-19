@@ -11027,6 +11027,12 @@ body {
   background-color: transparent;
 }
 
+.lc-header nav .lc-container .lc-navbar-custom button,
+.lc-header nav .lc-container .lc-navbar-custom button:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
 .lc-header nav .lc-container .lc-navbar-custom .lc-hamburguer {
   display: inline-block;
   position: relative;
