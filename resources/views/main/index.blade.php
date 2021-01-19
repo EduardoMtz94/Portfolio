@@ -8,7 +8,7 @@
                             <a href="/" class="navbar-brand">
                                 <img src="{{ asset('img/lalo-codes-black.png') }}" alt="Lalo codes logo" width="100" id="img-logo">
                             </a>
-                            <button class="navbar-toggler float-right" id="lc-btn-navbar" type="button" data-toggle="collapse" data-target="#lc-navbar">
+                            <button class="navbar-toggler float-right" id="lc-btn-navbar" type="button" data-toggle="collapse" data-target="#lc-navbar" aria-label="hamburguer" role="presentation">
                                 <span class="lc-hamburguer" id="lc-hamburguer"></span>
                             </button>
                             <div class="navbar-collapse collapse lc-navbar-menu" id="lc-navbar">
