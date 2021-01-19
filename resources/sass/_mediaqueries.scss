@@ -17,6 +17,11 @@
 }
 @media screen and (max-width: 767px) {
     .lc-header {
+        nav {
+            ul {
+                text-align: center;
+            }
+        }
         header {
             .lc-container {
                 .lc-title-section {
@@ -32,7 +37,7 @@
     .main {
         padding: 0px 20px;
         .lc-about {
-            padding: 50px 0;
+            padding-top: 75px;
             .lc-container {
                 .row { 
                     padding: 0 0.5rem;
@@ -55,7 +60,7 @@
             }
         }
         .lc-skills {
-            padding: 50px 0;
+            padding: 25px 0;
             .lc-container {
                 .row { 
                     padding: 0 0.5rem;
@@ -74,7 +79,7 @@
             }
         }
         .lc-portfolio {
-            padding: 50px 0;
+            padding-top: 75px;
             .lc-container {
                 .lc-portfolio-title {
                     padding-left: 0.5rem;
@@ -92,7 +97,7 @@
             }
         }
         .lc-contact {
-            padding: 50px 0;
+            padding-top: 75px;
             .lc-contact-title {
                 padding-left: 0.5rem;
                 padding-bottom: 0.5rem;
@@ -137,7 +142,6 @@
             }
         }
         .lc-portfolio {
-            padding: 50px 0;
             .lc-container {
                 .lc-portfolio-project {
                     p {
@@ -161,7 +165,6 @@
             }
         }
         .lc-contact {
-            padding: 50px 0;
             .lc-contact-title {
                 p {
                     font-size: 20px;
@@ -213,7 +216,6 @@
             }
         }
         .lc-portfolio {
-            padding: 50px 0;
             .lc-container {
                 .lc-portfolio-project {
                     p {

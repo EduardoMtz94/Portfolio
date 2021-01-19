@@ -11027,10 +11027,6 @@ body {
   background-color: transparent;
 }
 
-.lc-header nav .lc-container .lc-navbar-custom .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0,0,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
 .lc-header nav .lc-container .lc-navbar-custom .lc-hamburguer {
   display: inline-block;
   position: relative;
@@ -11107,10 +11103,6 @@ body {
 
 .lc-header nav .menuScroll {
   background-color: #000 !important;
-}
-
-.lc-header nav .menuScroll .lc-navbar-custom .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .lc-header nav .menuScroll .lc-navbar-custom .lc-hamburguer {
@@ -11450,6 +11442,10 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .lc-header nav ul {
+    text-align: center;
+  }
+
   .lc-header header .lc-container .lc-title-section .lc-title h1 {
     font-size: 30px;
   }
@@ -11459,7 +11455,7 @@ body {
   }
 
   .main .lc-about {
-    padding: 50px 0;
+    padding-top: 75px;
   }
 
   .main .lc-about .lc-container .row {
@@ -11484,7 +11480,7 @@ body {
   }
 
   .main .lc-skills {
-    padding: 50px 0;
+    padding: 25px 0;
   }
 
   .main .lc-skills .lc-container .row {
@@ -11506,7 +11502,7 @@ body {
   }
 
   .main .lc-portfolio {
-    padding: 50px 0;
+    padding-top: 75px;
   }
 
   .main .lc-portfolio .lc-container .lc-portfolio-title {
@@ -11527,7 +11523,7 @@ body {
   }
 
   .main .lc-contact {
-    padding: 50px 0;
+    padding-top: 75px;
   }
 
   .main .lc-contact .lc-contact-title {
@@ -11549,10 +11545,6 @@ body {
     font-size: 20px;
   }
 
-  .main .lc-portfolio {
-    padding: 50px 0;
-  }
-
   .main .lc-portfolio .lc-container .lc-portfolio-project p {
     font-size: 20px;
   }
@@ -11568,10 +11560,6 @@ body {
   .main .contact .content .contact-mail a {
     text-decoration: underline;
     font-size: 20px;
-  }
-
-  .main .lc-contact {
-    padding: 50px 0;
   }
 
   .main .lc-contact .lc-contact-title p {
@@ -11595,10 +11583,6 @@ body {
 
   .main .lc-skills .lc-container .lc-about-skills {
     font-size: 18px;
-  }
-
-  .main .lc-portfolio {
-    padding: 50px 0;
   }
 
   .main .lc-portfolio .lc-container .lc-portfolio-project p {
