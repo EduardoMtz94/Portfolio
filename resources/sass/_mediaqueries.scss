@@ -104,6 +104,20 @@
             }
         }
     }
+    #fb-root {
+        .fb_dialog {
+            .fb_dialog_content {
+                iframe[data-testid="bubble_iframe"]{
+                    width: 30px !important;
+                    height: 30px !important;
+                    svg[cursor="pointer"] {
+                        width: 30px !important;
+                        height: 30px !important;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 575px) {
