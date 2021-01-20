@@ -6,21 +6,27 @@
                     <nav class="navbar navbar-expand-lg lc-navbar-custom">
                         <div class="container">
                             <a href="/" class="navbar-brand">
-                                <img src="{{ asset('img/lalo-codes-black.png') }}" alt="Lalo codes logo" width="100" id="img-logo">
+                                <img src="{{ asset('img/lalo-codes-black.png') }}" alt="Lalo codes logo" width="100"
+                                    id="img-logo">
                             </a>
-                            <button class="navbar-toggler float-right" id="lc-btn-navbar" type="button" data-toggle="collapse" data-target="#lc-navbar" aria-label="hamburguer" role="presentation">
+                            <button class="navbar-toggler float-right" id="lc-btn-navbar" type="button"
+                                data-toggle="collapse" data-target="#lc-navbar" aria-label="hamburguer"
+                                role="presentation">
                                 <span class="lc-hamburguer" id="lc-hamburguer"></span>
                             </button>
                             <div class="navbar-collapse collapse lc-navbar-menu" id="lc-navbar">
                                 <ul class="navbar-nav ml-auto">
                                     <li class="nav-item">
-                                        <a class="nav-link" class="text-decoration-none" href="#about" id="btn-about">@lang('text.aboutMe')</a>
+                                        <a class="nav-link" class="text-decoration-none" href="#about"
+                                            id="btn-about">@lang('text.aboutMe')</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" class="text-decoration-none" href="#portfolio" id="btn-portfolio">@lang('text.portfolio')</a>
+                                        <a class="nav-link" class="text-decoration-none" href="#portfolio"
+                                            id="btn-portfolio">@lang('text.portfolio')</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" class="text-decoration-none" href="#contact" id="btn-contact">@lang('text.contactMe')</a>
+                                        <a class="nav-link" class="text-decoration-none" href="#contact"
+                                            id="btn-contact">@lang('text.contactMe')</a>
                                     </li>
                                 </ul>
                             </div>
@@ -29,17 +35,20 @@
                 </div>
             </div>
         </nav>
-    
+
         <aside>
             <div class="lc-sidebar">
                 <ul>
-                    <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/eduardo-martinez-san/"><i class="fa fa-linkedin" aria-hidden="true"></i><span>Linkedin</span></a></li>
-                    <li><a target="_blank" rel="noopener" href="https://github.com/EduardoMtz94"><i class="fa fa-github" aria-hidden="true"></i><span>Github</span></a></li>
-                    <li><a target="_blank" rel="noopener" href="https://www.instagram.com/el_aleman_mma/"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a></li>
+                    <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/eduardo-martinez-san/"><i
+                                class="fa fa-linkedin" aria-hidden="true"></i><span>Linkedin</span></a></li>
+                    <li><a target="_blank" rel="noopener" href="https://github.com/EduardoMtz94"><i class="fa fa-github"
+                                aria-hidden="true"></i><span>Github</span></a></li>
+                    <li><a target="_blank" rel="noopener" href="https://www.instagram.com/el_aleman_mma/"><i
+                                class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a></li>
                 </ul>
             </div>
         </aside>
-    
+
         <header>
             <div class="container-xl lc-container">
                 <div class="row">
@@ -47,7 +56,7 @@
                         <div class="lc-title">
                             <h1>
                                 <span>@lang('text.hi')</span><br>
-                                <span>@lang('text.iAm')</span><br> 
+                                <span>@lang('text.iAm')</span><br>
                                 <span>@lang('text.passionateDeveloper')</span>
                             </h1>
                         </div>
@@ -63,7 +72,7 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-6 lc-foto align-self-center">
                         <img src="{{ asset('/img/me.jpeg') }}"
-                        alt="Eduardo Martinez | Web Developer | Desarrollador web">
+                            alt="Eduardo Martinez | Web Developer | Desarrollador web">
                     </div>
                     <div class="col-sm-12 col-md-6 lc-text-about">
                         <h2>@lang('text.aboutMe')</h2>
@@ -119,7 +128,8 @@
                             <article>
                                 <h3>Tweety</h3>
                                 <p>@lang('text.aboutTweety')</p>
-                                <a href="https://tweety.lalocodes.com/" target="_blank" rel="noopener">@lang('text.seeMore')</a>
+                                <a href="https://tweety.lalocodes.com/" target="_blank"
+                                    rel="noopener">@lang('text.seeMore')</a>
                             </article>
                         </div>
                     </div>
@@ -131,7 +141,8 @@
                             <article>
                                 <h3>Restaurante</h3>
                                 <p>@lang('text.aboutRestaurante')</p>
-                                <a href="https://restaurant.lalocodes.com/" target="_blank" rel="noopener">@lang('text.seeMore')</a>
+                                <a href="https://restaurant.lalocodes.com/" target="_blank"
+                                    rel="noopener">@lang('text.seeMore')</a>
                             </article>
                         </div>
                     </div>
@@ -143,7 +154,8 @@
                             <article>
                                 <h3>Startup</h3>
                                 <p>@lang('text.aboutStartup')</p>
-                                <a href="https://startup.lalocodes.com/" target="_blank" rel="noopener">@lang('text.seeMore')</a>
+                                <a href="https://startup.lalocodes.com/" target="_blank"
+                                    rel="noopener">@lang('text.seeMore')</a>
                             </article>
                         </div>
                     </div>
@@ -168,7 +180,7 @@
                     </div>
                     <div class="col-sm-12 col-md-6 lc-contact-media">
                         <a href="https://twitter.com/messages/compose?recipient_id=1850631468&text=Hola%20Eduardo"
-                        class="twitter-dm-button" data-screen-name="@AlemanEMS" data-size="large">
+                            class="twitter-dm-button" data-screen-name="@AlemanEMS" data-size="large">
                             Message @AlemanEMS
                         </a>
                     </div>
@@ -181,10 +193,36 @@
             <div class="row">
                 <div class="col-12">
                     <footer>
-                        <p>Copyright © 2021, Eduardo Mart&iacute;nez</p> 
+                        <p>Copyright © 2021, Eduardo Mart&iacute;nez</p>
                     </footer>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v9.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="100255738741595" theme_color="#000000"
+        logged_in_greeting="Hola! ¿Cómo estás?. Dime, ¿En cómo te puedo ayudar?"
+        logged_out_greeting="Hola! ¿Cómo estás?. Dime, ¿En cómo te puedo ayudar?">
+    </div>
 </x-master>
