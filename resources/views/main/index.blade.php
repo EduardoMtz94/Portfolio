@@ -222,7 +222,7 @@
 
     <!-- Your Chat Plugin code -->
     <div class="fb-customerchat" attribution=setup_tool page_id="100255738741595" theme_color="#000000"
-        logged_in_greeting="Hola! ¿Cómo estás?. Dime, ¿Cómo te puedo ayudar?"
-        logged_out_greeting="Hola! ¿Cómo estás?. Dime, ¿Cómo te puedo ayudar?">
+        logged_in_greeting="Hola! ¿Cómo estás?. Gracias por ponerte en contacto conmigo, ¿Cómo te puedo ayudar?"
+        logged_out_greeting="Hola! ¿Cómo estás?. Gracias por ponerte en contacto conmigo, ¿Cómo te puedo ayudar?">
     </div>
 </x-master>
