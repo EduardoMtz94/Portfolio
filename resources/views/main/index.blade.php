@@ -8,7 +8,7 @@
                             <a href="/" class="navbar-brand">
                                 <img src="{{ asset('img/lalo-codes-black.png') }}" alt="Lalo codes logo" width="100" id="img-logo">
                             </a>
-                            <button class="navbar-toggler float-right" id="lc-btn-navbar" type="button" data-toggle="collapse" data-target="#lc-navbar">
+                            <button class="navbar-toggler float-right" id="lc-btn-navbar" type="button" data-toggle="collapse" data-target="#lc-navbar" aria-label="hamburguer" role="presentation">
                                 <span class="lc-hamburguer" id="lc-hamburguer"></span>
                             </button>
                             <div class="navbar-collapse collapse lc-navbar-menu" id="lc-navbar">
@@ -126,7 +126,7 @@
                     <div class="col-sm-12 col-md-4 lc-portfolio-content">
                         <div class="lc-portfolio-project">
                             <div class="lc-portfolio-foto">
-                                <img src="/img/restaurant.png" alt="Restaurant" width="300">
+                                <img src="/img/restaurant.jpg" alt="Restaurant" width="300">
                             </div>
                             <article>
                                 <h3>Restaurante</h3>
@@ -138,7 +138,7 @@
                     <div class="col-sm-12 col-md-4 lc-portfolio-content">
                         <div class="lc-portfolio-project">
                             <div class="lc-portfolio-foto">
-                                <img src="/img/startup.png" alt="Startup" width="300">
+                                <img src="/img/startup.jpg" alt="Startup" width="300">
                             </div>
                             <article>
                                 <h3>Startup</h3>
