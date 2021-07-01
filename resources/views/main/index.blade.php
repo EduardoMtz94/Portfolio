@@ -162,7 +162,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12 col-md-6 lc-contact-mail">
-                        <a href="mailto:eduardomartinezsan94@gmail.com">
+                        <a href="mailto:eduardomartinezsan94@gmail.com" class="lc-contact-mail-a">
                             eduardomartinezsan94@gmail.com
                         </a>
                     </div>
