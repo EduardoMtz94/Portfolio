@@ -181,7 +181,7 @@
             <div class="row">
                 <div class="col-12">
                     <footer>
-                        <p>Copyright © 2021, Eduardo Mart&iacute;nez</p> 
+                        <p>Copyright © 2022, Eduardo Mart&iacute;nez</p> 
                     </footer>
                 </div>
             </div>
