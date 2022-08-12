@@ -114,12 +114,12 @@
                     <div class="col-sm-12 col-md-4 lc-portfolio-content">
                         <div class="lc-portfolio-project">
                             <div class="lc-portfolio-foto">
-                                <img src="/img/tweety.jpeg" alt="Tweety" width="300">
+                                <img src="/img/hgcomercial.png" alt="HG Comercial" width="300">
                             </div>
                             <article>
-                                <h3>Tweety</h3>
-                                <p>@lang('text.aboutTweety')</p>
-                                <a href="https://tweety.lalocodes.com/" target="_blank" rel="noopener">@lang('text.seeMore')</a>
+                                <h3>HG Comercial</h3>
+                                <p>@lang('text.aboutHGComercial')</p>
+                                <a href="https://hgcomercial.com/" target="_blank" rel="noopener">@lang('text.seeMore')</a>
                             </article>
                         </div>
                     </div>
